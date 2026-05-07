@@ -34,3 +34,5 @@ Para manejar las incidencias o mejoras sugeridas con respecto a la ontología, r
 # Financiación (Funding)
 
 Esta ontología ha sido desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es)).
+
+![Logos](./resources/EDINT_UE_V-Color.png)
