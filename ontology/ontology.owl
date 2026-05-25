@@ -79,6 +79,10 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
         <IRI>#</IRI>
     </Annotation>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:issued"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2026-03-03</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
         <Literal>0.1.0</Literal>
     </Annotation>
