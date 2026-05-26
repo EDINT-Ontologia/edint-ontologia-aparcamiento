@@ -11,11 +11,11 @@
 
 | Tipo | Descripción | Ejemplo de título |
 |------|-------------|-----------------|
-| | `[ERROR]` | Clases, propiedades o axiomas incorrectos | `[ERROR] Clase Persona sin rango en edad` |
-| | `[MISSING]` | Conceptos o relaciones faltantes | `[MISSING] Agregar propiedad tieneHabilidad` |
-| | `[IMPROVE]` | Mejoras en definiciones o estructura | `[IMPROVE] Definición ambigua de Evento` |
-| | `[ALIGN]` | Alineación con otras ontologías | `[ALIGN] Mapear con FOAF` |
-| | `[DOCS]` | Documentación incompleta o errónea | `[DOCS] Falta ejemplo de uso` |
+| `[ERROR]` | Clases, propiedades o axiomas incorrectos | `[ERROR] Clase Persona sin rango en edad` |
+| `[MISSING]` | Conceptos o relaciones faltantes | `[MISSING] Agregar propiedad tieneHabilidad` |
+| `[IMPROVE]` | Mejoras en definiciones o estructura | `[IMPROVE] Definición ambigua de Evento` |
+| `[ALIGN]` | Alineación con otras ontologías | `[ALIGN] Mapear con FOAF` |
+| `[DOCS]` | Documentación incompleta o errónea | `[DOCS] Falta ejemplo de uso` |
 
 ## Información requerida
 
