@@ -198,7 +198,7 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/PermitType"/>
+                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitType"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -557,9 +557,9 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/PermitType -->
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitType -->
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/PermitType"/>
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/VehiclePermitType"/>
     
 
 
