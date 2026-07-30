@@ -11,7 +11,7 @@ El propósito de esta ontología es el de proporcionar un vocabulario común par
 El prefijo de la ontología de Aparcamiento es: edintinfp y es publicada en el espacio de nombres: [http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#) 
 
 # Modelo conceptual (Ontology conceptualization)
-![Modelo conceptual general](diagrams/diagrama-conceptual.png)
+![Modelo conceptual general](diagrams/diagram.png)
 
 # Estructura del repositorio (Repository structure)
 
@@ -29,8 +29,10 @@ El repositorio contiene los siguientes directorios:
 
 # Mantenimiento y evolución (Maintenance and evolution)
 
-Para manejar las incidencias o mejoras sugeridas con respecto a la ontología, recomendamos seguir las guía proporcionadas en ([Issues Management](https://github.com/oeg-upm/edint-ontologia-aparcamiento/issues)) para generar una indicencia (trabajo en progreso).
+Para manejar las incidencias o mejoras sugeridas con respecto a la ontología, recomendamos seguir las guías proporcionadas en ([Issues Management](./ISSUES.md)) para generar una incidencia.
 
 # Financiación (Funding)
 
-Esta ontología ha sido desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es)).
+Esta ontología ha sido desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es/)). 
+
+![Logos](./resources/EDINT_UE_V-Color.png)
