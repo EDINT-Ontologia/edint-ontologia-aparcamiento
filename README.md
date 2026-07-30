@@ -11,7 +11,7 @@ El propósito de esta ontología es el de proporcionar un vocabulario común par
 El prefijo de la ontología de Aparcamiento es: edintinfp y es publicada en el espacio de nombres: [http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#) 
 
 # Modelo conceptual (Ontology conceptualization)
-![Modelo conceptual general](diagrams/diagrama-conceptual.png)
+![Modelo conceptual general](diagrams/diagram.png)
 
 # Estructura del repositorio (Repository structure)
 
