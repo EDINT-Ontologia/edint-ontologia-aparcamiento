@@ -1,19 +1,20 @@
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento/0.1.0> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento> <http://purl.org/dc/terms/created> "2026-03-03" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento> <http://purl.org/dc/terms/creator> "Daniel Doña" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento> <http://purl.org/dc/terms/creator> "Edna Ruckhaus" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento> <http://purl.org/dc/terms/creator> "Lucía Sánchez" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento> <http://purl.org/dc/terms/creator> "Oscar Corcho" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento> <http://purl.org/dc/terms/creator> "Socorro Bernardos" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento> <http://purl.org/dc/terms/description> "La ontología de Aparcamiento representa los aparcamientos en la vía pública y los que etán fuera de la vía pública, los cuales a su vez pueden ser públicos o privados. \nLos aparcamientos son una intalación más de la infraestructura de la ciudad por lo cual  la ontología está relacionada con la ontología de Infraestructura. Además, se representan sus puntos de acceso para lo cual se enlaza a la representación de sensores de la infraestructura."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento> <http://purl.org/dc/terms/description> "The Parking ontology represents on-street and off-street parking, which can be either public or private. Parking facilities are part of the city's infrastructure, and therefore this ontology is related to the Infrastructure ontology. Furthermore, their access points are represented, as a relationship to the infrastructure's sensor representation."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento> <http://purl.org/dc/terms/title> "Ontología de Aparcamiento"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento> <http://purl.org/dc/terms/title> "The Parking Ontology"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintapar" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
+<https://edint.es/def/aparcamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://edint.es/def/aparcamiento> <http://www.w3.org/2002/07/owl#versionIRI> <https://edint.es/def/aparcamiento> .
+<https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/created> "2026-03-03" .
+<https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/creator> "Daniel Doña" .
+<https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/creator> "Edna Ruckhaus" .
+<https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/creator> "Lucía Sánchez" .
+<https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/creator> "Oscar Corcho" .
+<https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/creator> "Socorro Bernardos" .
+<https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/description> "La ontología de Aparcamiento representa los aparcamientos en la vía pública y los que están fuera de la vía pública, los cuales a su vez pueden ser públicos o privados. \nLos aparcamientos son una intalación más de la infraestructura de la ciudad por lo cual  la ontología está relacionada con la ontología de Infraestructura. Además, se representan sus puntos de acceso para lo cual se enlaza a la representación de sensores de la infraestructura."@es .
+<https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/description> "The Parking ontology represents on-street and off-street parking, which can be either public or private. Parking facilities are part of the city's infrastructure, and therefore this ontology is related to the Infrastructure ontology. Furthermore, their access points are represented, as a relationship to the infrastructure's sensor representation."@en .
+<https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/title> "Ontología de Aparcamiento"@es .
+<https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/title> "The Parking Ontology"@en .
+<https://edint.es/def/aparcamiento> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintapar" .
+<https://edint.es/def/aparcamiento> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://edint.es/def/aparcamiento#> .
+<https://edint.es/def/aparcamiento> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-aparcamiento/releases/tag/v0.2> .
+<https://edint.es/def/aparcamiento> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.1" .
 # 
 # 
 # #################################################################
@@ -98,128 +99,128 @@
 # #################################################################
 # 
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitType
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByVehicleType> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
-_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/edint/PermitType> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre el Grupo de plazas por tipo de permiso y la taxonomía de tipos de permiso."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the group of places by type of permit and the taxonomy of types of permit."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#label> "permit type"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de permiso"@es .
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#vehicleType
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#vehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+# https://edint.es/def/aparcamiento#hasParkingFee
+<https://edint.es/def/aparcamiento#hasParkingFee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/aparcamiento#hasParkingFee> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/aparcamiento#Parking> .
+<https://edint.es/def/aparcamiento#hasParkingFee> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/aparcamiento#ParkingFee> .
+<https://edint.es/def/aparcamiento#hasParkingFee> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre un aparcamiento y su tarifa."@es .
+<https://edint.es/def/aparcamiento#hasParkingFee> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a parking and its fee."@en .
+<https://edint.es/def/aparcamiento#hasParkingFee> <http://www.w3.org/2000/01/rdf-schema#label> "has parking fee"@en .
+<https://edint.es/def/aparcamiento#hasParkingFee> <http://www.w3.org/2000/01/rdf-schema#label> "tiene tarifa de aparcamiento"@es .
+# 
+# https://edint.es/def/aparcamiento#hasParkingSpot
+<https://edint.es/def/aparcamiento#hasParkingSpot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingSpotsByPermitType> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#Parking> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/aparcamiento#ParkingSpot> .
+<https://edint.es/def/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre el aparcamiento o el grupo de plazas de un aparcamiento y las plazas específicas que contiene."@es .
+<https://edint.es/def/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between  the parking or a group of parking spots and the specific spots it contains."@en .
+<https://edint.es/def/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#label> "has parking spot"@en .
+<https://edint.es/def/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#label> "tiene plaza de aparcamiento"@es .
+# 
+# https://edint.es/def/aparcamiento#hasSensor
+<https://edint.es/def/aparcamiento#hasSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/aparcamiento#hasSensor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/infraestructura#ObservationPoint> .
+<https://edint.es/def/aparcamiento#hasSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación ente el punto de observación y el sensor que realiza la observación."@es .
+<https://edint.es/def/aparcamiento#hasSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the observation point and the sensor that performs the observation."@en .
+<https://edint.es/def/aparcamiento#hasSensor> <http://www.w3.org/2000/01/rdf-schema#label> "has sensor"@en .
+<https://edint.es/def/aparcamiento#hasSensor> <http://www.w3.org/2000/01/rdf-schema#label> "tiene sensor"@es .
+# 
+# https://edint.es/def/aparcamiento#hasSpotsByParkingPermitType
+<https://edint.es/def/aparcamiento#hasSpotsByParkingPermitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/aparcamiento#hasSpotsByParkingPermitType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/aparcamiento#Parking> .
+<https://edint.es/def/aparcamiento#hasSpotsByParkingPermitType> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/aparcamiento#ParkingSpotsByPermitType> .
+<https://edint.es/def/aparcamiento#hasSpotsByParkingPermitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre el Aparcamiento y su Grupo de plazas por tipo de permiso, por ejemplo Plazas de Rotación, Residentes, Movilidad Reducida, etc."@es .
+<https://edint.es/def/aparcamiento#hasSpotsByParkingPermitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the Parking and its Group of spaces by type of permit, for example Rotation Spaces, Residents, Reduced Mobility, etc."@en .
+<https://edint.es/def/aparcamiento#hasSpotsByParkingPermitType> <http://www.w3.org/2000/01/rdf-schema#label> "has a group of spots per type of permit"@en .
+<https://edint.es/def/aparcamiento#hasSpotsByParkingPermitType> <http://www.w3.org/2000/01/rdf-schema#label> "tiene grupo de plazas por tipo de permiso"@es .
+# 
+# https://edint.es/def/aparcamiento#hasSpotsByVehicleType
+<https://edint.es/def/aparcamiento#hasSpotsByVehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/aparcamiento#hasSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/aparcamiento#Parking> .
+<https://edint.es/def/aparcamiento#hasSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> .
+<https://edint.es/def/aparcamiento#hasSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre el Aparcamiento y  su Grupo de plazas por tipo de vehículo."@es .
+<https://edint.es/def/aparcamiento#hasSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the Parking and its Group of spots by vehicle type."@en .
+<https://edint.es/def/aparcamiento#hasSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "has a group of spots per type of vehicle"@en .
+<https://edint.es/def/aparcamiento#hasSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "tiene grupo de plazas por tipo de vehiculo"@es .
+# 
+# https://edint.es/def/aparcamiento#isPartOfZone
+<https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/aparcamiento#OnStreetParking> .
+<https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/zone#RegulatedParkingZone> .
+<https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre un grupo de plazas de aparcamiento en la vía pública y la zona de estacionamiento regulado a la cual pertenecen."@es .
+<https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a group of parking spaces on a street and the regulated parking zone to which they belong."@en .
+<https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#label> "es parte de zona"@es .
+<https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#label> "is part of zone"@en .
+# 
+# https://edint.es/def/aparcamiento#providesPublicService
+<https://edint.es/def/aparcamiento#providesPublicService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/aparcamiento#providesPublicService> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/infraestructura#Facility> .
+<https://edint.es/def/aparcamiento#providesPublicService> <http://www.w3.org/2000/01/rdf-schema#comment> "Public service provided by a municipal facility, for example internet via wifi."@en .
+<https://edint.es/def/aparcamiento#providesPublicService> <http://www.w3.org/2000/01/rdf-schema#comment> "Servicio público prestado por un equipamiento municipal, por ejemplo internet a través de una wifi."@es .
+<https://edint.es/def/aparcamiento#providesPublicService> <http://www.w3.org/2000/01/rdf-schema#label> "presta servicio público"@es .
+<https://edint.es/def/aparcamiento#providesPublicService> <http://www.w3.org/2000/01/rdf-schema#label> "provides public service"@en .
+# 
+# https://edint.es/def/censovehiculos#permitType
+<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> .
+<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
-_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleType> .
+_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehiclePermitType> .
 _:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de vehículo (por ejemplo, turismo, furgoneta, caravana, etc.)"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of vehicle. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., van, truck, caravan, etc.)."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de vehiculo"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "vehicle type"@en .
+<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre el Grupo de plazas por tipo de permiso y la taxonomía de tipos de permiso."@es .
+<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the group of places by type of permit and the taxonomy of types of permit."@en .
+<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#label> "permit type"@en .
+<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de permiso"@es .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasParkingFee
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasParkingFee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasParkingFee> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasParkingFee> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingFee> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasParkingFee> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre un aparcamiento y su tarifa."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasParkingFee> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a parking and its fee."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasParkingFee> <http://www.w3.org/2000/01/rdf-schema#label> "has parking fee"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasParkingFee> <http://www.w3.org/2000/01/rdf-schema#label> "tiene tarifa de aparcamiento"@es .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasParkingSpot
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasParkingSpot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
-_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByVehicleType> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByPermitType> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# https://edint.es/def/censovehiculos#vehicleType
+<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpot> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre el aparcamiento o el grupo de plazas de un aparcamiento y las plazas específicas que contiene."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between  the parking or a group of parking spots and the specific spots it contains."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#label> "has parking spot"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#label> "tiene plaza de aparcamiento"@es .
+_:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehicleType> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de vehículo (por ejemplo, turismo, furgoneta, caravana, etc.)"@en .
+<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of vehicle. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., van, truck, caravan, etc.)."@es .
+<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de vehiculo"@es .
+<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "vehicle type"@en .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSensor
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSensor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#ObservationPoint> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación ente el punto de observación y el sensor que realiza la observación."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the observation point and the sensor that performs the observation."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSensor> <http://www.w3.org/2000/01/rdf-schema#label> "has sensor"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSensor> <http://www.w3.org/2000/01/rdf-schema#label> "tiene sensor"@es .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSpotsByParkingPermitType
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSpotsByParkingPermitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSpotsByParkingPermitType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSpotsByParkingPermitType> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByPermitType> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSpotsByParkingPermitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre el Aparcamiento y su Grupo de plazas por tipo de permiso, por ejemplo Plazas de Rotación, Residentes, Movilidad Reducida, etc."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSpotsByParkingPermitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the Parking and its Group of spaces by type of permit, for example Rotation Spaces, Residents, Reduced Mobility, etc."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSpotsByParkingPermitType> <http://www.w3.org/2000/01/rdf-schema#label> "has a group of spots per type of permit"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSpotsByParkingPermitType> <http://www.w3.org/2000/01/rdf-schema#label> "tiene grupo de plazas por tipo de permiso"@es .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSpotsByVehicleType
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSpotsByVehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByVehicleType> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre el Aparcamiento y  su Grupo de plazas por tipo de vehículo."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the Parking and its Group of spots by vehicle type."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "has a group of spots per type of vehicle"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#hasSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "tiene grupo de plazas por tipo de vehiculo"@es .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#isPartOfZone
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#isPartOfZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#OnStreetParking> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedParkingZone> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre un grupo de plazas de aparcamiento en la vía pública y la zona de estacionamiento regulado a la cual pertenecen."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a group of parking spaces on a street and the regulated parking zone to which they belong."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#label> "es parte de zona"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#label> "is part of zone"@en .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#providesPublicService
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#providesPublicService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#providesPublicService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#providesPublicService> <http://www.w3.org/2000/01/rdf-schema#comment> "Public service provided by a municipal facility, for example internet via wifi."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#providesPublicService> <http://www.w3.org/2000/01/rdf-schema#comment> "Servicio público prestado por un equipamiento municipal, por ejemplo internet a través de una wifi."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#providesPublicService> <http://www.w3.org/2000/01/rdf-schema#label> "presta servicio público"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#providesPublicService> <http://www.w3.org/2000/01/rdf-schema#label> "provides public service"@en .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#hasObservationPoint
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#hasObservationPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#hasObservationPoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#ObservationPoint> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#hasObservationPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre un elemento de la infraestructura y un punto de observación por algún sensor."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#hasObservationPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between an infrastructure element and an observation point by some sensor."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#hasObservationPoint> <http://www.w3.org/2000/01/rdf-schema#label> "has observation point"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#hasObservationPoint> <http://www.w3.org/2000/01/rdf-schema#label> "tiene punto de observación"@es .
-# 
-# http://www.w3.org/2004/02/skos/core#inScheme
-<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# https://edint.es/def/infraestructura#hasObservationPoint
+<https://edint.es/def/infraestructura#hasObservationPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/infraestructura#hasObservationPoint> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/infraestructura#ObservationPoint> .
+<https://edint.es/def/infraestructura#hasObservationPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre un elemento de la infraestructura y un punto de observación por algún sensor."@es .
+<https://edint.es/def/infraestructura#hasObservationPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between an infrastructure element and an observation point by some sensor."@en .
+<https://edint.es/def/infraestructura#hasObservationPoint> <http://www.w3.org/2000/01/rdf-schema#label> "has observation point"@en .
+<https://edint.es/def/infraestructura#hasObservationPoint> <http://www.w3.org/2000/01/rdf-schema#label> "tiene punto de observación"@es .
 # 
 # 
 # 
@@ -230,25 +231,25 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #################################################################
 # 
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#numberOfParkingSpots
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#numberOfParkingSpots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
+# https://edint.es/def/aparcamiento#numberOfParkingSpots
+<https://edint.es/def/aparcamiento#numberOfParkingSpots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://edint.es/def/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
 _:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid16 .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByVehicleType> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByPermitType> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingSpotsByPermitType> .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#Parking> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of parking spots. Can be used to represent the total number of spots, or the  number of spots by vehicle type or by permit type. For example, 50 spots for cars, 10 for motorcycles."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de plazas de aparcamiento. Se puede usar para representar el número total de plazas, o el número de plazas por tipo de vehículo o por tipo de permiso. Por ejemplo, 50 plazas para coches y 10 para motos."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#label> "number of parking spots"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#label> "número de plazas de aparcamiento"@es .
+<https://edint.es/def/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://edint.es/def/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of parking spots. Can be used to represent the total number of spots, or the  number of spots by vehicle type or by permit type. For example, 50 spots for cars, 10 for motorcycles."@en .
+<https://edint.es/def/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de plazas de aparcamiento. Se puede usar para representar el número total de plazas, o el número de plazas por tipo de vehículo o por tipo de permiso. Por ejemplo, 50 plazas para coches y 10 para motos."@es .
+<https://edint.es/def/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#label> "number of parking spots"@en .
+<https://edint.es/def/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#label> "número de plazas de aparcamiento"@es .
 # 
 # 
 # 
@@ -258,88 +259,6 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #
 # #################################################################
 # 
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedParkingZone
-<http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedParkingZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedParkingZone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedZone> .
-<http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedParkingZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Public road zone where parking is subject to time regulation, fee payment, or other restrictions."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedParkingZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Zona de la vía pública donde el estacionamiento está sujeto a regulación horaria, pago de tasas u otras restricciones."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedParkingZone> <http://www.w3.org/2000/01/rdf-schema#label> "Regulated parking zone"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedParkingZone> <http://www.w3.org/2000/01/rdf-schema#label> "Zona de estacionamiento regulado"@es .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedZone
-<http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Area a la que se aplica una regulacion o normativa particular."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Area to which a particular regulation or policy applies."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedZone> <http://www.w3.org/2000/01/rdf-schema#label> "Regulated zone"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedZone> <http://www.w3.org/2000/01/rdf-schema#label> "Zona regulatoria"@es .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#OffStreetParking
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#OffStreetParking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#OffStreetParking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#OffStreetParking> <http://www.w3.org/2000/01/rdf-schema#comment> "Aparcamiento fuera de la vía pública. Incluye instalaciones o superficies de aparcamiento."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#OffStreetParking> <http://www.w3.org/2000/01/rdf-schema#comment> "Off-street parking, including parking facilities or parking surfaces."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#OffStreetParking> <http://www.w3.org/2000/01/rdf-schema#label> "Aparcamiento fuera de la vía pública"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#OffStreetParking> <http://www.w3.org/2000/01/rdf-schema#label> "Off-street parking"@en .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#OnStreetParking
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#OnStreetParking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#OnStreetParking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#OnStreetParking> <http://www.w3.org/2000/01/rdf-schema#comment> "Aparcamiento en la vía pública que inluye plazas para residentes, no residentes, libres, carga y descarga, entre otros."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#OnStreetParking> <http://www.w3.org/2000/01/rdf-schema#comment> "On-street parking that includes spaces for residents, non-residents, free spaces, loading and unloading, among others."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#OnStreetParking> <http://www.w3.org/2000/01/rdf-schema#label> "Aparcamiento en la vía pública"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#OnStreetParking> <http://www.w3.org/2000/01/rdf-schema#label> "On-street parking"@en .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking> <http://www.w3.org/2000/01/rdf-schema#comment> "Aparcamiento para diferentes tipos de vehículo que incluye instalaciones o superficies de aparcamiento fuera de la vía pública o zonas de aparcamiento en la vía pública para residentes, no residentes o libres."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking> <http://www.w3.org/2000/01/rdf-schema#comment> "Parking for different types of vehicles, including off-street parking facilities or on-street parking zones for residents, non-residents, or free parking."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking> <http://www.w3.org/2000/01/rdf-schema#label> "Aparcamiento"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking> <http://www.w3.org/2000/01/rdf-schema#label> "Parking"@en .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingFee
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingFee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingFee> <http://www.w3.org/2000/01/rdf-schema#comment> "Parking fee that essentially covers the right to park the vehicle in an authorized space for a certain time period."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingFee> <http://www.w3.org/2000/01/rdf-schema#comment> "Tarifa de un aparcamiento que cubre fundamentalmente el derecho a estacionar el vehículo en un espacio autorizado durante un tiempo determinado."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingFee> <http://www.w3.org/2000/01/rdf-schema#label> "Parking fee"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingFee> <http://www.w3.org/2000/01/rdf-schema#label> "Tarifa"@es .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpot
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpot> <http://www.w3.org/2000/01/rdf-schema#comment> "Individual parking spot in an on-street or off-street parking."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpot> <http://www.w3.org/2000/01/rdf-schema#comment> "Plaza individual de estacionamiento dentro o fuera de la vía pública."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpot> <http://www.w3.org/2000/01/rdf-schema#label> "Parking spot"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpot> <http://www.w3.org/2000/01/rdf-schema#label> "Plaza (de aparcamiento)"@es .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByPermitType
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByPermitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByPermitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of parking spots for each type of permit, for example Resident. It indicates the number of slots  for each type."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByPermitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Grupo de plazas por cada tipo de permiso, por ejemplo Residente. Indica el número de plazas por cada tipo."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByPermitType> <http://www.w3.org/2000/01/rdf-schema#label> "Group of parking spots by type of permit"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByPermitType> <http://www.w3.org/2000/01/rdf-schema#label> "Grupo de plazas por tipo de permiso"@es .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByVehicleType
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByVehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of parking spots for each type of vehicle: cars, motorcycles, bicycles, among others. It indicates the number of slots per type."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Grupo de plazas de aparcamiento para cada tipo de vehículo: coches, motocicletas, biciletas, entre otros. Indica el número de plazas por tipo."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "Group of parking spots by vehicle type"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#ParkingSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "Grupo de plazas por tipo de vehículo"@es .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility> <http://www.w3.org/2000/01/rdf-schema#comment> "Equipamientos a los que un ciudadano puede acudir pertenecientes a una organización pública o privadal. Un equipamiento puede ser un aparcamiento, un centro educativo, una estación de bicicleta compartida y cualquier instalación que sea un centro de salud, centro educativo, centro social, comisaría, entre otros."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility> <http://www.w3.org/2000/01/rdf-schema#comment> "Facilities that citizens can access and that belong to public or private organizations. A facility can be a parking lot, an educational center, a bike-sharing station, or any facility that serves as a health center, educational center, community center, police station, among others."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility> <http://www.w3.org/2000/01/rdf-schema#label> "Equipamiento"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility> <http://www.w3.org/2000/01/rdf-schema#label> "Facility"@en .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#ObservationPoint
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#ObservationPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#ObservationPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#ObservationPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Points where access or counting observations can be made using sensors."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#ObservationPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Puntos en donde se pueden realizar observaciones de acceso o de conteo a través de sensores."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#ObservationPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Observation point"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#ObservationPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Punto de observación"@es .
 # 
 # http://www.opengis.net/ont/geosparql#Feature
 <http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -356,6 +275,88 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://www.w3.org/2004/02/skos/core#ConceptScheme
 <http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# https://edint.es/def/aparcamiento#OffStreetParking
+<https://edint.es/def/aparcamiento#OffStreetParking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/aparcamiento#OffStreetParking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://edint.es/def/aparcamiento#Parking> .
+<https://edint.es/def/aparcamiento#OffStreetParking> <http://www.w3.org/2000/01/rdf-schema#comment> "Aparcamiento fuera de la vía pública. Incluye instalaciones o superficies de aparcamiento."@es .
+<https://edint.es/def/aparcamiento#OffStreetParking> <http://www.w3.org/2000/01/rdf-schema#comment> "Off-street parking, including parking facilities or parking surfaces."@en .
+<https://edint.es/def/aparcamiento#OffStreetParking> <http://www.w3.org/2000/01/rdf-schema#label> "Aparcamiento fuera de la vía pública"@es .
+<https://edint.es/def/aparcamiento#OffStreetParking> <http://www.w3.org/2000/01/rdf-schema#label> "Off-street parking"@en .
+# 
+# https://edint.es/def/aparcamiento#OnStreetParking
+<https://edint.es/def/aparcamiento#OnStreetParking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/aparcamiento#OnStreetParking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://edint.es/def/aparcamiento#Parking> .
+<https://edint.es/def/aparcamiento#OnStreetParking> <http://www.w3.org/2000/01/rdf-schema#comment> "Aparcamiento en la vía pública que inluye plazas para residentes, no residentes, libres, carga y descarga, entre otros."@es .
+<https://edint.es/def/aparcamiento#OnStreetParking> <http://www.w3.org/2000/01/rdf-schema#comment> "On-street parking that includes spaces for residents, non-residents, free spaces, loading and unloading, among others."@en .
+<https://edint.es/def/aparcamiento#OnStreetParking> <http://www.w3.org/2000/01/rdf-schema#label> "Aparcamiento en la vía pública"@es .
+<https://edint.es/def/aparcamiento#OnStreetParking> <http://www.w3.org/2000/01/rdf-schema#label> "On-street parking"@en .
+# 
+# https://edint.es/def/aparcamiento#Parking
+<https://edint.es/def/aparcamiento#Parking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/aparcamiento#Parking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://edint.es/def/infraestructura#Facility> .
+<https://edint.es/def/aparcamiento#Parking> <http://www.w3.org/2000/01/rdf-schema#comment> "Aparcamiento para diferentes tipos de vehículo que incluye instalaciones o superficies de aparcamiento fuera de la vía pública o zonas de aparcamiento en la vía pública para residentes, no residentes o libres."@es .
+<https://edint.es/def/aparcamiento#Parking> <http://www.w3.org/2000/01/rdf-schema#comment> "Parking for different types of vehicles, including off-street parking facilities or on-street parking zones for residents, non-residents, or free parking."@en .
+<https://edint.es/def/aparcamiento#Parking> <http://www.w3.org/2000/01/rdf-schema#label> "Aparcamiento"@es .
+<https://edint.es/def/aparcamiento#Parking> <http://www.w3.org/2000/01/rdf-schema#label> "Parking"@en .
+# 
+# https://edint.es/def/aparcamiento#ParkingFee
+<https://edint.es/def/aparcamiento#ParkingFee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/aparcamiento#ParkingFee> <http://www.w3.org/2000/01/rdf-schema#comment> "Parking fee that essentially covers the right to park the vehicle in an authorized space for a certain time period."@en .
+<https://edint.es/def/aparcamiento#ParkingFee> <http://www.w3.org/2000/01/rdf-schema#comment> "Tarifa de un aparcamiento que cubre fundamentalmente el derecho a estacionar el vehículo en un espacio autorizado durante un tiempo determinado."@es .
+<https://edint.es/def/aparcamiento#ParkingFee> <http://www.w3.org/2000/01/rdf-schema#label> "Parking fee"@en .
+<https://edint.es/def/aparcamiento#ParkingFee> <http://www.w3.org/2000/01/rdf-schema#label> "Tarifa"@es .
+# 
+# https://edint.es/def/aparcamiento#ParkingSpot
+<https://edint.es/def/aparcamiento#ParkingSpot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/aparcamiento#ParkingSpot> <http://www.w3.org/2000/01/rdf-schema#comment> "Individual parking spot in an on-street or off-street parking."@en .
+<https://edint.es/def/aparcamiento#ParkingSpot> <http://www.w3.org/2000/01/rdf-schema#comment> "Plaza individual de estacionamiento dentro o fuera de la vía pública."@es .
+<https://edint.es/def/aparcamiento#ParkingSpot> <http://www.w3.org/2000/01/rdf-schema#label> "Parking spot"@en .
+<https://edint.es/def/aparcamiento#ParkingSpot> <http://www.w3.org/2000/01/rdf-schema#label> "Plaza (de aparcamiento)"@es .
+# 
+# https://edint.es/def/aparcamiento#ParkingSpotsByPermitType
+<https://edint.es/def/aparcamiento#ParkingSpotsByPermitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/aparcamiento#ParkingSpotsByPermitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of parking spots for each type of permit, for example Resident. It indicates the number of slots  for each type."@en .
+<https://edint.es/def/aparcamiento#ParkingSpotsByPermitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Grupo de plazas por cada tipo de permiso, por ejemplo Residente. Indica el número de plazas por cada tipo."@es .
+<https://edint.es/def/aparcamiento#ParkingSpotsByPermitType> <http://www.w3.org/2000/01/rdf-schema#label> "Group of parking spots by type of permit"@en .
+<https://edint.es/def/aparcamiento#ParkingSpotsByPermitType> <http://www.w3.org/2000/01/rdf-schema#label> "Grupo de plazas por tipo de permiso"@es .
+# 
+# https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType
+<https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of parking spots for each type of vehicle: cars, motorcycles, bicycles, among others. It indicates the number of slots per type."@en .
+<https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Grupo de plazas de aparcamiento para cada tipo de vehículo: coches, motocicletas, biciletas, entre otros. Indica el número de plazas por tipo."@es .
+<https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "Group of parking spots by vehicle type"@en .
+<https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "Grupo de plazas por tipo de vehículo"@es .
+# 
+# https://edint.es/def/infraestructura#Facility
+<https://edint.es/def/infraestructura#Facility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/infraestructura#Facility> <http://www.w3.org/2000/01/rdf-schema#comment> "Equipamientos a los que un ciudadano puede acudir pertenecientes a una organización pública o privadal. Un equipamiento puede ser un aparcamiento, un centro educativo, una estación de bicicleta compartida y cualquier instalación que sea un centro de salud, centro educativo, centro social, comisaría, entre otros."@es .
+<https://edint.es/def/infraestructura#Facility> <http://www.w3.org/2000/01/rdf-schema#comment> "Facilities that citizens can access and that belong to public or private organizations. A facility can be a parking lot, an educational center, a bike-sharing station, or any facility that serves as a health center, educational center, community center, police station, among others."@en .
+<https://edint.es/def/infraestructura#Facility> <http://www.w3.org/2000/01/rdf-schema#label> "Equipamiento"@es .
+<https://edint.es/def/infraestructura#Facility> <http://www.w3.org/2000/01/rdf-schema#label> "Facility"@en .
+# 
+# https://edint.es/def/infraestructura#ObservationPoint
+<https://edint.es/def/infraestructura#ObservationPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/infraestructura#ObservationPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://edint.es/def/infraestructura#ObservationPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Points where access or counting observations can be made using sensors."@en .
+<https://edint.es/def/infraestructura#ObservationPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Puntos en donde se pueden realizar observaciones de acceso o de conteo a través de sensores."@es .
+<https://edint.es/def/infraestructura#ObservationPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Observation point"@en .
+<https://edint.es/def/infraestructura#ObservationPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Punto de observación"@es .
+# 
+# https://edint.es/def/zone#RegulatedParkingZone
+<https://edint.es/def/zone#RegulatedParkingZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/zone#RegulatedParkingZone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://edint.es/def/zone#RegulatedZone> .
+<https://edint.es/def/zone#RegulatedParkingZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Public road zone where parking is subject to time regulation, fee payment, or other restrictions."@en .
+<https://edint.es/def/zone#RegulatedParkingZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Zona de la vía pública donde el estacionamiento está sujeto a regulación horaria, pago de tasas u otras restricciones."@es .
+<https://edint.es/def/zone#RegulatedParkingZone> <http://www.w3.org/2000/01/rdf-schema#label> "Regulated parking zone"@en .
+<https://edint.es/def/zone#RegulatedParkingZone> <http://www.w3.org/2000/01/rdf-schema#label> "Zona de estacionamiento regulado"@es .
+# 
+# https://edint.es/def/zone#RegulatedZone
+<https://edint.es/def/zone#RegulatedZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/zone#RegulatedZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Area a la que se aplica una regulacion o normativa particular."@es .
+<https://edint.es/def/zone#RegulatedZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Area to which a particular regulation or policy applies."@en .
+<https://edint.es/def/zone#RegulatedZone> <http://www.w3.org/2000/01/rdf-schema#label> "Regulated zone"@en .
+<https://edint.es/def/zone#RegulatedZone> <http://www.w3.org/2000/01/rdf-schema#label> "Zona regulatoria"@es .
+# 
 # 
 # 
 # #################################################################
@@ -365,10 +366,10 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
-# http://vocab.linkeddata.es/datosabiertos/kos/edint/PermitType
-<http://vocab.linkeddata.es/datosabiertos/kos/edint/PermitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# https://edint.es/kos/VehiclePermitType
+<https://edint.es/kos/VehiclePermitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
-# http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleType
-<http://vocab.linkeddata.es/datosabiertos/kos/edint/VehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# https://edint.es/kos/VehicleType
+<https://edint.es/kos/VehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
