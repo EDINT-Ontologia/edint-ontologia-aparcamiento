@@ -5,9 +5,9 @@
 Figura 1. Conceptual model</figcaption></center></p>
 A <a href="#Parking">parking lot</a> is a place where vehicles can be temporarily parked by paying the <a href="#ParkingFee">fee</a> that <a href="#hasParkingFee">has</a> charges.
 
-Parking lots are a (sub)class of <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility">Equipment</a> which, in turn, can <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#hasObservationPoint">have</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#ObservationPoint">observation points</a>. This class and property are described in the <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#">Ontology for the representation of a municipality's infrastructure</a>.
+Parking lots are a (sub)class of <a href="#https://edint.es/def/infraestructura#Facility">Equipment</a> which, in turn, can <a href="#https://edint.es/def/infraestructura#hasObservationPoint">have</a> <a href="#https://edint.es/def/infraestructura#ObservationPoint">observation points</a>. This class and property are described in the <a href="https://edint.es/def/infraestructura">Ontology for the representation of a municipality's infrastructure</a>.
 
-There are two (sub)classes of parking: those that are <a href="#OnStreetParking">on-street parking</a> and those that are <a href="#OffStreetParking">off-street parking</a>. On-street parking can be <a href="#isPartOfZone">part of a</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedParkingZone">regulated parking zone</a>, which is a (sub)class of <a href="#http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedZone">regulated zone</a>.
+There are two (sub)classes of parking: those that are <a href="#OnStreetParking">on-street parking</a> and those that are <a href="#OffStreetParking">off-street parking</a>. On-street parking can be <a href="#isPartOfZone">part of a</a> <a href="#https://edint.es/def/zone#RegulatedParkingZone">regulated parking zone</a>, which is a (sub)class of <a href="#https://edint.es/def/zone#RegulatedZone">regulated zone</a>.
 
 All parking areas have parking spaces that can be grouped according to the type of permit; for example, there are groups of spaces for residents, people with reduced mobility, etc. They are also grouped by the type of vehicle, for example, spaces for cars, for motorcycles, etc. These two taxonomies have been defined in the Ontology for the representation of the census or register of vehicles.</span>
 
@@ -15,9 +15,9 @@ All parking areas have parking spaces that can be grouped according to the type 
 @prefix comp: &lt;http://semweb.mmlab.be/ns/rml-compression#&gt; .
 @prefix d2rq: &lt;http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#&gt; .
 @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
-@prefix edintapar: &lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#&gt; .
-@prefix edintinf: &lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#&gt; .
-@prefix edintveh: &lt;http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#&gt; .
+@prefix edintapar: &lt;https://edint.es/def/aparcamiento#&gt; .
+@prefix edintinf: &lt;https://edint.es/def/infraestructura#&gt; .
+@prefix edintveh: &lt;https://edint.es/def/censovehiculos#&gt; .
 @prefix esadm: &lt;http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#&gt; .
 @prefix escjr: &lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#&gt; .
 @prefix esdir: &lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#&gt; .
@@ -36,55 +36,55 @@ All parking areas have parking spaces that can be grouped according to the type 
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/parking/P001&gt; a edintapar:OnStreetParking;
+&lt;https://example.org/recurso/parking/P001&gt; a edintapar:OnStreetParking;
   dct:identifier "P001";
-  &lt;http://schema.org/address&gt; &lt;http://vocab.linkeddata.es/datosabiertos/recurso/direccion-postal/28001&gt;;
+  &lt;http://schema.org/address&gt; &lt;https://example.org/recurso/direccion-postal/28001&gt;;
   &lt;http://schema.org/openingHours&gt; "Mo-Fr 09:00-18:00";
-  edintapar:hasParkingFee &lt;http://vocab.linkeddata.es/datosabiertos/recurso/tarifa-aparcamiento/TAR001&gt;;
-  edintapar:hasParkingSpot &lt;http://vocab.linkeddata.es/datosabiertos/recurso/plaza-aparcamiento/PLZ001&gt;;
-  edintapar:hasSpotsByParkingPermitType &lt;http://vocab.linkeddata.es/datosabiertos/recurso/plaza-aparcamiento/PLZ001&gt;;
-  edintapar:hasSpotsByVehicleType &lt;http://vocab.linkeddata.es/datosabiertos/recurso/plazas/GRP001&gt;;
-  edintapar:isPartOfZone &lt;http://vocab.linkeddata.es/datosabiertos/recurso/zona-regulatoria/ZONA_SER_01&gt;;
-  edintinf:belongsTo &lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/territorio/barrio/Salamanca&gt;;
+  edintapar:hasParkingFee &lt;https://example.org/recurso/tarifa-aparcamiento/TAR001&gt;;
+  edintapar:hasParkingSpot &lt;https://example.org/recurso/plaza-aparcamiento/PLZ001&gt;;
+  edintapar:hasSpotsByParkingPermitType &lt;https://example.org/recurso/plaza-aparcamiento/PLZ001&gt;;
+  edintapar:hasSpotsByVehicleType &lt;https://example.org/recurso/plazas/GRP001&gt;;
+  edintapar:isPartOfZone &lt;https://example.org/recurso/zona-regulatoria/ZONA_SER_01&gt;;
+  edintinf:belongsTo &lt;https://example.org/recurso/sector-publico/territorio/barrio/Salamanca&gt;;
   edintinf:hasInfrastructureType &lt;edintkos:onStreetParking&gt;;
-  edintinf:hasRegisteredOwner &lt;http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/P001&gt;;
-  geosparql:hasGeometry &lt;http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/P001&gt;;
+  edintinf:hasRegisteredOwner &lt;https://example.org/recurso/organizacion/P001&gt;;
+  geosparql:hasGeometry &lt;https://example.org/recurso/equipamiento-municipal/locations/P001&gt;;
   rdfs:comment "Zona SER tramo inicial Serrano";
   rdfs:label "Aparcamiento Serrano TR1" .
 
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/direccion-postal/28001&gt; a esdir:DireccionPostal;
-  escjr:contieneVia &lt;http://vocab.linkeddata.es/datosabiertos/recurso/urbanismo-infraestructuras/callejero/Calle/Serrano&gt;;
+&lt;https://example.org/recurso/direccion-postal/28001&gt; a esdir:DireccionPostal;
+  escjr:contieneVia &lt;https://example.org/recurso/urbanismo-infraestructuras/callejero/Calle/Serrano&gt;;
   rdfs:label "Calle de Serrano 10, Madrid" .
 
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/urbanismo-infraestructuras/callejero/Calle/Serrano&gt;
+&lt;https://example.org/recurso/urbanismo-infraestructuras/callejero/Calle/Serrano&gt;
   a escjr:Via;
   dct:identifier "CL001";
-  esadm:municipio &lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/territorio/Municipio/Madrid&gt;;
-  escjr:contieneTramoVia &lt;http://vocab.linkeddata.es/datosabiertos/recurso/urbanismo-infraestructuras/callejero/TramoCalle/TR001&gt;;
+  esadm:municipio &lt;https://example.org/recurso/sector-publico/territorio/Municipio/Madrid&gt;;
+  escjr:contieneTramoVia &lt;https://example.org/recurso/urbanismo-infraestructuras/callejero/TramoCalle/TR001&gt;;
   escjr:tipoVia &lt;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/calle&gt; .
 
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/urbanismo-infraestructuras/callejero/TramoCalle/TR001&gt;
+&lt;https://example.org/recurso/urbanismo-infraestructuras/callejero/TramoCalle/TR001&gt;
   a escjr:TramoVia;
-  esadm:municipio &lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/territorio/Municipio/Madrid&gt;;
+  esadm:municipio &lt;https://example.org/recurso/sector-publico/territorio/Municipio/Madrid&gt;;
   escjr:numeroFinTramo "60";
   escjr:numeroInicioTramo "1";
-  escjr:via &lt;http://vocab.linkeddata.es/datosabiertos/recurso/urbanismo-infraestructuras/callejero/Calle/Serrano&gt; .
+  escjr:via &lt;https://example.org/recurso/urbanismo-infraestructuras/callejero/Calle/Serrano&gt; .
 
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/P001&gt;
+&lt;https://example.org/recurso/equipamiento-municipal/locations/P001&gt;
   a geosparql:Geometry;
   dct:identifier "P001";
   geosparql:asWKT "POINT (-3.6862 40.4306)"^^geosparql:wktLiteral .
 
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/grupo-plazas-por-vehiculos/GVEH001&gt;
+&lt;https://example.org/recurso/grupo-plazas-por-vehiculos/GVEH001&gt;
   a edintapar:SpotsByVehicleType;
   edintveh:vehicleType &lt;edintkos:car&gt;;
   edintapar:numberOfSpots "20" .
 
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/plazas/GRP001&gt; a edintapar:ParkingSpotsByPermitType;
+&lt;https://example.org/recurso/plazas/GRP001&gt; a edintapar:ParkingSpotsByPermitType;
   edintinf:numberOfParkingSpots "25";
   edintinf:permitType &lt;edintkos:Residente&gt; .
 
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/tarifa-aparcamiento/TAR001&gt; a edintapar:ParkingFee;
+&lt;https://example.org/recurso/tarifa-aparcamiento/TAR001&gt; a edintapar:ParkingFee;
   &lt;http://schema.org/description&gt; "Vehículos con distintivo B o C";
   &lt;http://schema.org/name&gt; "Tarifa estándar SER";
   &lt;http://schema.org/price&gt; "2.5";
