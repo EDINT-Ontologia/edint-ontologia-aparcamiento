@@ -1,7 +1,7 @@
 
 # AP1: ¿Cuáles son los estacionamientos disponibles y son en la vía pública o fuera de ella?
 
-PREFIX edintapar: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#>
+PREFIX edintapar: <https://edint.es/def/aparcamiento#>
 
 SELECT ?parking ?tipo
 WHERE {

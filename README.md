@@ -8,7 +8,7 @@ La ontología de Aparcamiento representa los datos de aparcamientos públicos y 
 El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales de los aparcamientos de un municipio. Su alcance se limita a los datos que pueden ser utilizados con los propósitos de mantener y acceder al inventario de los aparcamientos, así como gestionar su movilidad (accesos de vehículos a los aparcamientos), que son parte de las funciones habituales de las entidades locales.
 
 # Prefijo y espacio de nombres (Prefix and namespace)
-El prefijo de la ontología de Aparcamiento es: edintinfp y es publicada en el espacio de nombres: [http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#) 
+El prefijo de la ontología de Aparcamiento es: edintinfp y es publicada en el espacio de nombres: [https://edint.es/def/aparcamiento#](https://edint.es/def/aparcamiento#) 
 
 # Modelo conceptual (Ontology conceptualization)
 ![Modelo conceptual general](diagrams/diagram.png)

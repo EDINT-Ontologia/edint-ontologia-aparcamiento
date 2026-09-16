@@ -2,8 +2,8 @@
 # AP3: Para un aparcamiento, ¿qué grupos de plazas existen y para qué tipo de vehículo están reservadas (ej. eléctricos, motos, PMR)?
 
 
-PREFIX edintapar: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#>
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintapar: <https://edint.es/def/aparcamiento#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?parking ?grupo ?vehicleType ?vehicleTypeLabel ?numSpots
@@ -27,8 +27,8 @@ ORDER BY ?vehicleTypeLabel
 
 # Para todos los aparcamientos
 
-PREFIX edintapar: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#>
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintapar: <https://edint.es/def/aparcamiento#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?parking ?grupo ?vehicleType ?vehicleTypeLabel ?numSpots
