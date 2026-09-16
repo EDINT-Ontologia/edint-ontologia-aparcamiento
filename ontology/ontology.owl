@@ -33,8 +33,8 @@
 Los aparcamientos son una intalación más de la infraestructura de la ciudad por lo cual  la ontología está relacionada con la ontología de Infraestructura. Además, se representan sus puntos de acceso para lo cual se enlaza a la representación de sensores de la infraestructura.</dcterms:description>
         <dcterms:description xml:lang="en">The Parking ontology represents on-street and off-street parking, which can be either public or private. Parking facilities are part of the city&apos;s infrastructure, and therefore this ontology is related to the Infrastructure ontology. Furthermore, their access points are represented, as a relationship to the infrastructure&apos;s sensor representation.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dcterms:title xml:lang="es">Ontología de Aparcamiento</dcterms:title>
-        <dcterms:title xml:lang="en">The Parking Ontology</dcterms:title>
+        <dcterms:title xml:lang="es">Ontología EDINT de Aparcamiento</dcterms:title>
+        <dcterms:title xml:lang="en">EDINT Parking Ontology</dcterms:title>
         <vann:preferredNamespacePrefix>edintapar</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/aparcamiento#"/>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-aparcamiento/releases/tag/v0.2"/>
