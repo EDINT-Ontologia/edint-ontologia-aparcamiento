@@ -1,8 +1,8 @@
 
 # AP4: ¿Qué tipo de permiso se requiere para aparcar en un grupo de plazas (ej. residentes, carga y descarga) de un aparcamiento?
 
-PREFIX edintapar: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#>
-PREFIX edintveh: <http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#>
+PREFIX edintapar: <https://edint.es/def/aparcamiento#>
+PREFIX edintveh: <https://edint.es/def/censo-vehiculos#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 

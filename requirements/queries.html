@@ -183,7 +183,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
     <section class="file-card" id="AP01_sparql"><div class="file-header">Fichero: AP01.sparql</div>
                     <div class="query-block">
                         <span class="query-title">AP1: ¿Cuáles son los estacionamientos disponibles y son en la vía pública o fuera de ella?</span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintapar</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintapar</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/aparcamiento#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parking</span> <span class="nv">?tipo</span>
 <span class="k">WHERE</span> <span class="p">{</span>
@@ -228,7 +228,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="AP02_sparql"><div class="file-header">Fichero: AP02.sparql</div>
                     <div class="query-block">
                         <span class="query-title">AP2: ¿Qué tarifas se aplican a un aparcamiento determinado?</span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintapar</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintapar</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/aparcamiento#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parking</span> <span class="nv">?fee</span>
 <span class="k">WHERE</span> <span class="p">{</span>
@@ -242,7 +242,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title">Con etiquetas si existen</span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintapar</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintapar</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/aparcamiento#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">rdfs</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parking</span> <span class="nv">?fee</span> <span class="nv">?label</span> <span class="nv">?comment</span>
@@ -260,8 +260,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="AP03_sparql"><div class="file-header">Fichero: AP03.sparql</div>
                     <div class="query-block">
                         <span class="query-title">AP3: Para un aparcamiento, ¿qué grupos de plazas existen y para qué tipo de vehículo están reservadas (ej. eléctricos, motos, PMR)?</span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintapar</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edintveh</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintapar</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/aparcamiento#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edintveh</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/censo-vehiculos#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">rdfs</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parking</span> <span class="nv">?grupo</span> <span class="nv">?vehicleType</span> <span class="nv">?vehicleTypeLabel</span> <span class="nv">?numSpots</span>
@@ -287,8 +287,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title">Para todos los aparcamientos</span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintapar</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edintveh</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintapar</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/aparcamiento#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edintveh</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/censo-vehiculos#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">rdfs</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parking</span> <span class="nv">?grupo</span> <span class="nv">?vehicleType</span> <span class="nv">?vehicleTypeLabel</span> <span class="nv">?numSpots</span>
@@ -336,8 +336,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="AP04_sparql"><div class="file-header">Fichero: AP04.sparql</div>
                     <div class="query-block">
                         <span class="query-title">AP4: ¿Qué tipo de permiso se requiere para aparcar en un grupo de plazas (ej. residentes, carga y descarga) de un aparcamiento?</span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintapar</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edintveh</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/transporte/censovehiculos#&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintapar</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/aparcamiento#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edintveh</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/censo-vehiculos#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">rdfs</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
@@ -384,7 +384,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="AP05_sparql"><div class="file-header">Fichero: AP05.sparql</div>
                     <div class="query-block">
                         <span class="query-title">AP5: ¿Cuáles son los aparcamientos existentes en una zona regulada concreta?</span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintapar</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintapar</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/aparcamiento#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parking</span>
 <span class="k">WHERE</span> <span class="p">{</span>
@@ -398,7 +398,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title">Con nombre/etiqueta de la zona regulada</span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintapar</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintapar</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/aparcamiento#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">rdfs</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parking</span> <span class="nv">?zoneLabel</span>

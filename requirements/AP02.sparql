@@ -1,7 +1,7 @@
 
 # AP2: ¿Qué tarifas se aplican a un aparcamiento determinado?
 
-PREFIX edintapar: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#>
+PREFIX edintapar: <https://edint.es/def/aparcamiento#>
 
 SELECT ?parking ?fee
 WHERE {
@@ -12,7 +12,7 @@ WHERE {
 
 # Con etiquetas si existen
 
-PREFIX edintapar: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#>
+PREFIX edintapar: <https://edint.es/def/aparcamiento#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?parking ?fee ?label ?comment

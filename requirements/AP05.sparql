@@ -1,7 +1,7 @@
 
 # AP5: ¿Cuáles son los aparcamientos existentes en una zona regulada concreta?
 
-PREFIX edintapar: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#>
+PREFIX edintapar: <https://edint.es/def/aparcamiento#>
 
 SELECT ?parking
 WHERE {
@@ -13,7 +13,7 @@ ORDER BY ?parking
 
 # Con nombre/etiqueta de la zona regulada
 
-PREFIX edintapar: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#>
+PREFIX edintapar: <https://edint.es/def/aparcamiento#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?parking ?zoneLabel
