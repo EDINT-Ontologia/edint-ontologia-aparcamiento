@@ -20,15 +20,29 @@
      xmlns:edintinf="https://edint.es/def/infraestructura#"
      xmlns:edintveh="https://edint.es/def/censovehiculos#"
      xmlns:edintzone="https://edint.es/def/zone#"
-     xmlns:bibo="http://purl.org/ontology/bibo/">
-    <owl:Ontology rdf:about="https://edint.es/def/aparcamiento">
+     xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/">    <owl:Ontology rdf:about="https://edint.es/def/aparcamiento">
         <owl:versionIRI rdf:resource="https://edint.es/def/aparcamiento"/>
         <dcterms:created>2026-03-03</dcterms:created>
-        <dcterms:creator>Daniel Doña</dcterms:creator>
-        <dcterms:creator>Edna Ruckhaus</dcterms:creator>
-        <dcterms:creator>Lucía Sánchez</dcterms:creator>
-        <dcterms:creator>Oscar Corcho</dcterms:creator>
-        <dcterms:creator>Socorro Bernardos</dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Daniel Doña</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Edna Ruckhaus</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Lucía Sánchez</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Oscar Corcho</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Socorro Bernardos</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
         <dcterms:description xml:lang="es">La ontología de Aparcamiento representa los aparcamientos en la vía pública y los que están fuera de la vía pública, los cuales a su vez pueden ser públicos o privados. 
 Los aparcamientos son una intalación más de la infraestructura de la ciudad por lo cual  la ontología está relacionada con la ontología de Infraestructura. Además, se representan sus puntos de acceso para lo cual se enlaza a la representación de sensores de la infraestructura.</dcterms:description>
         <dcterms:description xml:lang="en">The Parking ontology represents on-street and off-street parking, which can be either public or private. Parking facilities are part of the city&apos;s infrastructure, and therefore this ontology is related to the Infrastructure ontology. Furthermore, their access points are represented, as a relationship to the infrastructure&apos;s sensor representation.</dcterms:description>
@@ -45,6 +59,9 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     <dcterms:abstract xml:lang="es">El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales de los aparcamientos públicos y privados de un municipio. Se incluye la representación de aparcamientos dentro y fuera de la vía pública. Su alcance se limita a los datos que pueden ser utilizados con el propósito de la gestión de movilidad, es decir accesos de vehículos a los aparcamientos, nivel de ocupación, plazas según tipo de permiso (por ejemplo, residentes) y plazas según tipo de vehículo, que son parte de las funciones habituales de las entidades locales.</dcterms:abstract>
     <dcterms:abstract xml:lang="en">The purpose of this ontology is to provide a common vocabulary for representing the main entities and data of public and private parking facilities in a municipality. It includes the representation of parking spaces both on and off public roads. Its scope is limited to data that can be used for mobility management purposes, such as vehicle access to parking facilities, occupancy levels, spaces by permit type (e.g., residents), and spaces by vehicle type, which are part of the standard functions of local authorities.</dcterms:abstract>
 </owl:Ontology>
+    <foaf:Organization rdf:about="https://oeg.fi.upm.es/">
+        <foaf:name>Ontology Engineering Group, UPM</foaf:name>
+    </foaf:Organization>
     
 
 
