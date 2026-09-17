@@ -19,7 +19,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:edintinf="https://edint.es/def/infraestructura#"
      xmlns:edintveh="https://edint.es/def/censovehiculos#"
-     xmlns:edintzone="https://edint.es/def/zone#"
+     xmlns:edintzone="https://edint.es/def/zona-regulatoria#"
      xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:widoco="https://w3id.org/widoco/vocab#">    <owl:Ontology rdf:about="https://edint.es/def/aparcamiento">
         <owl:versionIRI rdf:resource="https://edint.es/def/aparcamiento/0.2.1"/>
@@ -302,7 +302,7 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     <owl:ObjectProperty rdf:about="https://edint.es/def/aparcamiento#isPartOfZone">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://edint.es/def/aparcamiento#OnStreetParking"/>
-        <rdfs:range rdf:resource="https://edint.es/def/zone#RegulatedParkingZone"/>
+        <rdfs:range rdf:resource="https://edint.es/def/zona-regulatoria#RegulatedParkingZone"/>
         <rdfs:comment xml:lang="es">Relación entre un grupo de plazas de aparcamiento en la vía pública y la zona de estacionamiento regulado a la cual pertenecen.</rdfs:comment>
         <rdfs:comment xml:lang="en">Relationship between a group of parking spaces on a street and the regulated parking zone to which they belong.</rdfs:comment>
         <rdfs:label xml:lang="es">es parte de zona</rdfs:label>
@@ -554,10 +554,10 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     
 
 
-    <!-- https://edint.es/def/zone#RegulatedParkingZone -->
+    <!-- https://edint.es/def/zona-regulatoria#RegulatedParkingZone -->
 
-    <owl:Class rdf:about="https://edint.es/def/zone#RegulatedParkingZone">
-        <rdfs:subClassOf rdf:resource="https://edint.es/def/zone#RegulatedZone"/>
+    <owl:Class rdf:about="https://edint.es/def/zona-regulatoria#RegulatedParkingZone">
+        <rdfs:subClassOf rdf:resource="https://edint.es/def/zona-regulatoria#RegulatedZone"/>
         <rdfs:comment xml:lang="en">Public road zone where parking is subject to time regulation, fee payment, or other restrictions.</rdfs:comment>
         <rdfs:comment xml:lang="es">Zona de la vía pública donde el estacionamiento está sujeto a regulación horaria, pago de tasas u otras restricciones.</rdfs:comment>
         <rdfs:label xml:lang="en">Regulated parking zone</rdfs:label>
@@ -566,9 +566,9 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     
 
 
-    <!-- https://edint.es/def/zone#RegulatedZone -->
+    <!-- https://edint.es/def/zona-regulatoria#RegulatedZone -->
 
-    <owl:Class rdf:about="https://edint.es/def/zone#RegulatedZone">
+    <owl:Class rdf:about="https://edint.es/def/zona-regulatoria#RegulatedZone">
         <rdfs:comment xml:lang="es">Area a la que se aplica una regulacion o normativa particular.</rdfs:comment>
         <rdfs:comment xml:lang="en">Area to which a particular regulation or policy applies.</rdfs:comment>
         <rdfs:label xml:lang="en">Regulated zone</rdfs:label>
@@ -603,7 +603,28 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
         <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
         <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
         <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
-    </owl:Ontology>
+            <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
+                <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
+                <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/censovehiculos"/>
+                <rdfs:label xml:lang="es">Censo de Vehículos (edintveh)</rdfs:label>
+                <rdfs:label xml:lang="en">Vehicle Census (edintveh)</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
+                <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
+                <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+</owl:Ontology>
 </rdf:RDF>
 
 
