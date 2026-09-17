@@ -22,7 +22,6 @@
      xmlns:edintzone="https://edint.es/def/zone#"
      xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/">    <owl:Ontology rdf:about="https://edint.es/def/aparcamiento">
         <owl:versionIRI rdf:resource="https://edint.es/def/aparcamiento/0.2.1"/>
-        <dcterms:created>2026-03-03</dcterms:created>
         <dcterms:creator rdf:parseType="Resource">
             <foaf:name>Daniel Doña</foaf:name>
             <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
@@ -53,6 +52,9 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
         <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/aparcamiento#"/>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-aparcamiento/releases/tag/v0.2"/>
         <owl:versionInfo>0.2.1</owl:versionInfo>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-03</dcterms:created>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:issued>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
         <dcterms:publisher rdf:parseType="Resource">
             <foaf:name>FEMP</foaf:name>
             <foaf:homepage rdf:resource="https://www.femp.es/"/>
