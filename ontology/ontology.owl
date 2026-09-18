@@ -15,7 +15,7 @@
      xmlns:esadm="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
      xmlns:escjr="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#"
      xmlns:esdir="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#"
-     xmlns:schema="http://schema.org/"
+     xmlns:schema="https://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:edintinf="https://edint.es/def/infraestructura#"
      xmlns:edintveh="https://edint.es/def/censovehiculos#"
