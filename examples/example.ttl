@@ -16,108 +16,111 @@
 @prefix schema: <http://www.owl-ontologies.com/schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix edintkos: <https://edint.es/kos/> .
+@base   <http://example.org/resource/> .
+@prefix ex: <http://example.org/resource/> .
 
-<http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/parking-mad-101>
+<geometry/parking-mad-101>
   a geosparql:Geometry;
   dct:identifier "parking-mad-101" .
 
-<http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/parking-mad-102>
+<geometry/parking-mad-102>
   a geosparql:Geometry;
   dct:identifier "parking-mad-102" .
 
-<http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/parking-mad-103>
+<geometry/parking-mad-103>
   a geosparql:Geometry;
   dct:identifier "parking-mad-103" .
 
-<http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/parking-zgz-001>
+<geometry/parking-zgz-001>
   a geosparql:Geometry;
   dct:identifier "parking-zgz-001" .
 
-<http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/parking-zgz-002>
+<geometry/parking-zgz-002>
   a geosparql:Geometry;
   dct:identifier "parking-zgz-002" .
 
-<http://vocab.linkeddata.es/datosabiertos/recurso/parking/parking-mad-101> a edintapar:OnStreetParking;
+<on-street-parking/parking-mad-101> a edintapar:OnStreetParking;
   dct:identifier "parking-mad-101";
-  <http://schema.org/address> <http://vocab.linkeddata.es/datosabiertos/recurso/direccion-postal/28001>;
+  <http://schema.org/address> <direccion-postal/28001>;
   <http://schema.org/openingHours> "Mo-Fr 09:00-21:00; Sa 09:00-15:00";
-  edintinf:belongsTo <http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/territorio/barrio/salamanca>;
-  edintinf:containsFacility <http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/mun-mad-04>;
+  edintinf:belongsTo <barrio/salamanca>;
+  edintinf:containsFacility <facility/mun-mad-04>;
   edintinf:hasInfrastructureType <edintkos:parking-superficie>;
-  edintinf:hasObservationPoint <http://vocab.linkeddata.es/datosabiertos/recurso/punto-de-observacion/obs-mad-99>;
-  edintapar:hasParkingFee <http://vocab.linkeddata.es/datosabiertos/recurso/tarifa-aparcamiento/ser-azul-distrito4>;
-  edintinf:hasRegisteredOwner <http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/parking-mad-101>;
-  edintapar:hasSpotsByParkingPermitType <http://vocab.linkeddata.es/datosabiertos/recurso/plaza-aparcamiento/plaza-azul>;
-  edintapar:hasSpotsByVehicleType <http://vocab.linkeddata.es/datosabiertos/recurso/plazas-por-aparcamiento/count-m-101>;
-  edintapar:isPartOfZone <http://vocab.linkeddata.es/datosabiertos/recurso/zona-regulatoria/ser-salamanca>;
-  geosparql:hasGeometry <http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/parking-mad-101>;
+  edintinf:hasObservationPoint <observation-point/obs-mad-99>;
+  edintapar:hasParkingFee <parking-fee/ser-azul-distrito4>;
+  edintinf:hasRegisteredOwner <organization/parking-mad-101>;
+  edintapar:hasSpotsByParkingPermitType <parking-spots-by-permit-type/plaza-azul>;
+  edintapar:hasSpotsByVehicleType <parking-spots-by-vehicle-type/count-m-101>;
+  edintapar:isPartOfZone <regulated-parking-zone/ser-salamanca>;
+  geosparql:hasGeometry <geometry/parking-mad-101>;
   rdfs:comment "SER Madrid - Zona Azul de rotación en Distrito Salamanca.";
   rdfs:label "Parking Calle Serrano" .
 
-<http://vocab.linkeddata.es/datosabiertos/recurso/parking/parking-mad-102> a edintapar:OnStreetParking;
+<on-street-parking/parking-mad-102> a edintapar:OnStreetParking;
   dct:identifier "parking-mad-102";
-  <http://schema.org/address> <http://vocab.linkeddata.es/datosabiertos/recurso/direccion-postal/28014>;
+  <http://schema.org/address> <direccion-postal/28014>;
   <http://schema.org/openingHours> "Mo-Fr 09:00-21:00; Sa 09:00-15:00";
-  edintinf:belongsTo <http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/territorio/barrio/retiro>;
-  edintinf:containsFacility <http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/mun-mad-03>;
+  edintinf:belongsTo <barrio/retiro>;
+  edintinf:containsFacility <facility/mun-mad-03>;
   edintinf:hasInfrastructureType <edintkos:parking-superficie>;
-  edintinf:hasObservationPoint <http://vocab.linkeddata.es/datosabiertos/recurso/punto-de-observacion/obs-mad-100>;
-  edintapar:hasParkingFee <http://vocab.linkeddata.es/datosabiertos/recurso/tarifa-aparcamiento/ser-verde-distrito3>;
-  edintinf:hasRegisteredOwner <http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/parking-mad-102>;
-  edintapar:hasSpotsByParkingPermitType <http://vocab.linkeddata.es/datosabiertos/recurso/plaza-aparcamiento/plaza-verde>;
-  edintapar:hasSpotsByVehicleType <http://vocab.linkeddata.es/datosabiertos/recurso/plazas-por-aparcamiento/count-m-102>;
-  edintapar:isPartOfZone <http://vocab.linkeddata.es/datosabiertos/recurso/zona-regulatoria/ser-retiro>;
-  geosparql:hasGeometry <http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/parking-mad-102>;
+  edintinf:hasObservationPoint <observation-point/obs-mad-100>;
+  edintapar:hasParkingFee <parking-fee/ser-verde-distrito3>;
+  edintinf:hasRegisteredOwner <organization/parking-mad-102>;
+  edintapar:hasSpotsByParkingPermitType <parking-spots-by-permit-type/plaza-verde>;
+  edintapar:hasSpotsByVehicleType <parking-spots-by-vehicle-type/count-m-102>;
+  edintapar:isPartOfZone <regulated-parking-zone/ser-retiro>;
+  geosparql:hasGeometry <geometry/parking-mad-102>;
   rdfs:comment "SER Madrid - Zona Verde preferente residentes frente al Retiro.";
   rdfs:label "Parking Calle Alfonso XII" .
 
-<http://vocab.linkeddata.es/datosabiertos/recurso/parking/parking-mad-103> a edintapar:OnStreetParking;
+<on-street-parking/parking-mad-103> a edintapar:OnStreetParking;
   dct:identifier "parking-mad-103";
-  <http://schema.org/address> <http://vocab.linkeddata.es/datosabiertos/recurso/direccion-postal/28012>;
+  <http://schema.org/address> <direccion-postal/28012>;
   <http://schema.org/openingHours> "24/7";
-  edintinf:belongsTo <http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/territorio/barrio/centro>;
-  edintinf:containsFacility <http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/mun-mad-01>;
+  edintinf:belongsTo <barrio/centro>;
+  edintinf:containsFacility <facility/mun-mad-01>;
   edintinf:hasInfrastructureType <edintkos:parking-subterraneo>;
-  edintinf:hasObservationPoint <http://vocab.linkeddata.es/datosabiertos/recurso/punto-de-observacion/obs-mad-101>;
-  edintapar:hasParkingFee <http://vocab.linkeddata.es/datosabiertos/recurso/tarifa-aparcamiento/tarifa-p-reducida>;
-  edintinf:hasRegisteredOwner <http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/parking-mad-103>;
-  edintapar:hasSpotsByParkingPermitType <http://vocab.linkeddata.es/datosabiertos/recurso/plaza-aparcamiento/plaza-electrico>;
-  edintapar:hasSpotsByVehicleType <http://vocab.linkeddata.es/datosabiertos/recurso/plazas-por-aparcamiento/count-m-103>;
-  edintapar:isPartOfZone <http://vocab.linkeddata.es/datosabiertos/recurso/zona-regulatoria/madrid-central>;
-  geosparql:hasGeometry <http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/parking-mad-103>;
+  edintinf:hasObservationPoint <observation-point/obs-mad-101>;
+  edintapar:hasParkingFee <parking-fee/tarifa-p-reducida>;
+  edintinf:hasRegisteredOwner <organization/parking-mad-103>;
+  edintapar:hasSpotsByParkingPermitType <parking-spots-by-permit-type/plaza-electrico>;
+  edintapar:hasSpotsByVehicleType <parking-spots-by-vehicle-type/count-m-103>;
+  edintapar:isPartOfZone <regulated-parking-zone/madrid-central>;
+  geosparql:hasGeometry <geometry/parking-mad-103>;
   rdfs:comment "Parking municipal subterráneo con puntos de recarga eléctrica.";
   rdfs:label "Parking Público Plaza Mayor" .
 
-<http://vocab.linkeddata.es/datosabiertos/recurso/parking/parking-zgz-001> a edintapar:OnStreetParking;
+<on-street-parking/parking-zgz-001> a edintapar:OnStreetParking;
   dct:identifier "parking-zgz-001";
-  <http://schema.org/address> <http://vocab.linkeddata.es/datosabiertos/recurso/direccion-postal/50001>;
+  <http://schema.org/address> <direccion-postal/50001>;
   <http://schema.org/openingHours> "Mo-Fr 09:00-14:00, 17:00-20:00; Sa 09:00-14:00";
-  edintinf:belongsTo <http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/territorio/barrio/casco-historico>;
-  edintinf:containsFacility <http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/mun-zgz-01>;
+  edintinf:belongsTo <barrio/casco-historico>;
+  edintinf:containsFacility <facility/mun-zgz-01>;
   edintinf:hasInfrastructureType <edintkos:parking-superficie>;
-  edintinf:hasObservationPoint <http://vocab.linkeddata.es/datosabiertos/recurso/punto-de-observacion/sensor-zgz-01>;
-  edintapar:hasParkingFee <http://vocab.linkeddata.es/datosabiertos/recurso/tarifa-aparcamiento/esro-azul>;
-  edintinf:hasRegisteredOwner <http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/parking-zgz-001>;
-  edintapar:hasSpotsByParkingPermitType <http://vocab.linkeddata.es/datosabiertos/recurso/plaza-aparcamiento/permiso-rotacion>;
-  edintapar:hasSpotsByVehicleType <http://vocab.linkeddata.es/datosabiertos/recurso/plazas-por-aparcamiento/count-001>;
-  edintapar:isPartOfZone <http://vocab.linkeddata.es/datosabiertos/recurso/zona-regulatoria/1-esro>;
-  geosparql:hasGeometry <http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/parking-zgz-001>;
+  edintinf:hasObservationPoint <observation-point/sensor-zgz-01>;
+  edintapar:hasParkingFee <parking-fee/esro-azul>;
+  edintinf:hasRegisteredOwner <organization/parking-zgz-001>;
+  edintapar:hasSpotsByParkingPermitType <parking-spots-by-permit-type/permiso-rotacion>;
+  edintapar:hasSpotsByVehicleType <parking-spots-by-vehicle-type/count-001>;
+  edintapar:isPartOfZone <regulated-parking-zone/1-esro>;
+  geosparql:hasGeometry <geometry/parking-zgz-001>;
   rdfs:comment "Zona Azul Zaragoza - Rotación corta.";
   rdfs:label "Parking Calle San Jorge" .
 
-<http://vocab.linkeddata.es/datosabiertos/recurso/parking/parking-zgz-002> a edintapar:OnStreetParking;
+<on-street-parking/parking-zgz-002> a edintapar:OnStreetParking;
   dct:identifier "parking-zgz-002";
-  <http://schema.org/address> <http://vocab.linkeddata.es/datosabiertos/recurso/direccion-postal/50001>;
+  <http://schema.org/address> <direccion-postal/50001>;
   <http://schema.org/openingHours> "Mo-Fr 09:00-14:00, 17:00-20:00; Sa 09:00-14:00";
-  edintinf:belongsTo <http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/territorio/barrio/casco-historico>;
-  edintinf:containsFacility <http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/mun-zgz-01>;
+  edintinf:belongsTo <barrio/casco-historico>;
+  edintinf:containsFacility <facility/mun-zgz-01>;
   edintinf:hasInfrastructureType <edintkos:parking-superficie>;
-  edintinf:hasObservationPoint <http://vocab.linkeddata.es/datosabiertos/recurso/punto-de-observacion/sensor-zgz-02>;
-  edintapar:hasParkingFee <http://vocab.linkeddata.es/datosabiertos/recurso/tarifa-aparcamiento/esre-naranja>;
-  edintinf:hasRegisteredOwner <http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/parking-zgz-002>;
-  edintapar:hasSpotsByParkingPermitType <http://vocab.linkeddata.es/datosabiertos/recurso/plaza-aparcamiento/permiso-residente>;
-  edintapar:hasSpotsByVehicleType <http://vocab.linkeddata.es/datosabiertos/recurso/plazas-por-aparcamiento/count-002>;
-  edintapar:isPartOfZone <http://vocab.linkeddata.es/datosabiertos/recurso/zona-regulatoria/1-esre>;
-  geosparql:hasGeometry <http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/parking-zgz-002>;
+  edintinf:hasObservationPoint <observation-point/sensor-zgz-02>;
+  edintapar:hasParkingFee <parking-fee/esre-naranja>;
+  edintinf:hasRegisteredOwner <organization/parking-zgz-002>;
+  edintapar:hasSpotsByParkingPermitType <parking-spots-by-permit-type/permiso-residente>;
+  edintapar:hasSpotsByVehicleType <parking-spots-by-vehicle-type/count-002>;
+  edintapar:isPartOfZone <regulated-parking-zone/1-esre>;
+  geosparql:hasGeometry <geometry/parking-zgz-002>;
   rdfs:comment "Zona Naranja Zaragoza - Preferente residentes.";
   rdfs:label "Parking Calle Mayor" .

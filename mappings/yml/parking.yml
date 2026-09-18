@@ -18,7 +18,7 @@ mappings:
   parking-spot:
     sources:
       - spots-source
-    s: https://example.org/recurso/plaza-aparcamiento/$(entityID)
+    s: http://example.org/resource/parking-spot/$(entityID)
     po:
       - [a, edintapar:ParkingSpot]
       - [dct:identifier, $(entityID)]
@@ -29,13 +29,13 @@ mappings:
           type: literal
       - [schema:length, $(length)]
       - [schema:width, $(width)]
-      - [schema:address, "https://example.org/recurso/direccion-postal/aparcamiento/$(refParkingSite)~iri"]
-      - [geo:hasGeometry, "https://example.org/recurso/geometria/plaza-aparcamiento/$(entityID)~iri"]
+      - [schema:address, "http://example.org/resource/direccion-postal/$(refParkingSite)~iri"]
+      - [geo:hasGeometry, "http://example.org/resource/geometry/$(entityID)~iri"]
 
   parking-spot-geometry:
     sources:
       - spots-source
-    s: https://example.org/recurso/geometria/plaza-aparcamiento/$(entityID)
+    s: http://example.org/resource/geometry/$(entityID)
     po:
       - [a, geo:Geometry]
       - p: dct:identifier
@@ -48,7 +48,7 @@ mappings:
   parking-spot-address:
     sources:
       - spots-source
-    s: https://example.org/recurso/direccion-postal/aparcamiento/$(refParkingSite)
+    s: http://example.org/resource/direccion-postal/$(refParkingSite)
     po:
       - [a, esdir:DireccionPostal]
       - p: dct:identifier
@@ -60,7 +60,7 @@ mappings:
   parking-site:
     sources:
       - spots-source
-    s: https://example.org/recurso/aparcamiento/$(refParkingSite)
+    s: http://example.org/resource/off-street-parking/$(refParkingSite)
     po:
       # Aparacameinto fuera de la via pública
       - [a, edintapar:OffStreetParking]
@@ -69,19 +69,19 @@ mappings:
         o:
           value: "Aparcamiento $(address)"
           type: literal
-      - [schema:address, "https://example.org/recurso/direccion-postal/aparcamiento/$(refParkingSite)~iri"]
+      - [schema:address, "http://example.org/resource/direccion-postal/$(refParkingSite)~iri"]
       # relacion: Parking -> ParkingSpot.
-      - [edintapar:hasParkingSpot, "https://example.org/recurso/plaza-aparcamiento/$(entityID)~iri"]
+      - [edintapar:hasParkingSpot, "http://example.org/resource/parking-spot/$(entityID)~iri"]
 
   parking-spot-occupancy-observation:
     sources:
       - history-source
-    s: https://example.org/recurso/observacion/ocupacion-plaza/$(entityId)-$(_id)
+    s: http://example.org/resource/observation/$(entityId)-$(_id)
     po:
       - [a, sosa:Observation]
       - [dct:identifier, $(_id)]
       # Plaza sobre la que se realiza la observación.
-      - [sosa:hasFeatureOfInterest, "https://example.org/recurso/plaza-aparcamiento/$(entityId)~iri"]
+      - [sosa:hasFeatureOfInterest, "http://example.org/resource/parking-spot/$(entityId)~iri"]
       # Propiedad observada: ocupación de la plaza.
       - [sosa:hasSimpleResult, $(status)]
       - [sosa:resultTime, $(dateModified), xsd:dateTime]
