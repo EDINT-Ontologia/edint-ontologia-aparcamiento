@@ -29,13 +29,13 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
                                                                       "Ontología EDINT de Aparcamiento"@es ;
                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintapar" ;
                                      <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
-                                     <http://schema.org/codeRepository> <https://github.com/EDINT-Ontologia/edint-ontologia-aparcamiento> ;
-                                     <http://schema.org/creativeWorkStatus> "Ontology Specification"@en ;
-                                     <http://schema.org/funding> "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)" ;
                                      rdfs:label "Aparcamiento"@es ,
                                                 "Parking"@en ;
                                      owl:priorVersion <https://github.com/EDINT-Ontologia/edint-ontologia-aparcamiento/releases/tag/v0.2> ;
                                      owl:versionInfo "0.2.1" ;
+                                     <https://schema.org/codeRepository> <https://github.com/EDINT-Ontologia/edint-ontologia-aparcamiento> ;
+                                     <https://schema.org/creativeWorkStatus> "Ontology Specification"@en ;
+                                     <https://schema.org/funding> "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)" ;
                                      <https://w3id.org/widoco/vocab#jsonldSerialization> "ontology.jsonld" ;
                                      <https://w3id.org/widoco/vocab#ntSerialization> "ontology.nt" ;
                                      <https://w3id.org/widoco/vocab#rdfxmlSerialization> "ontology.rdf" ;
@@ -45,24 +45,24 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
                                                                                      _:genid9 ,
                                                                                      _:genid10 .
 
-_:genid1 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> ;
-          <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" ;
+          <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid2 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> ;
-          <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" ;
+          <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid3 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> ;
-          <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" ;
+          <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid4 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> ;
-          <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" .
+_:genid4 <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" ;
+          <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid5 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> ;
-          <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" .
+_:genid5 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" ;
+          <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid6 <http://schema.org/affiliation> "Federación Española de Municipios y Provincias" ;
-          <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> ;
-          <http://xmlns.com/foaf/0.1/name> "FEMP" .
+_:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> ;
+          <http://xmlns.com/foaf/0.1/name> "FEMP" ;
+          <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
 
 _:genid7 rdfs:label "GeoSPARQL"@en ,
                      "GeoSPARQL"@es ;
@@ -140,24 +140,8 @@ _:genid10 rdfs:label "Regulated Zones (edintzone)"@en ,
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
-###  http://schema.org/affiliation
-<http://schema.org/affiliation> rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/codeRepository
-<http://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/creativeWorkStatus
-<http://schema.org/creativeWorkStatus> rdf:type owl:AnnotationProperty .
-
-
 ###  http://schema.org/domainIncludes
 <http://schema.org/domainIncludes> rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/funding
-<http://schema.org/funding> rdf:type owl:AnnotationProperty .
 
 
 ###  http://schema.org/rangeIncludes
@@ -190,6 +174,22 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  http://xmlns.com/foaf/0.1/name
 <http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/affiliation
+<https://schema.org/affiliation> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/codeRepository
+<https://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/creativeWorkStatus
+<https://schema.org/creativeWorkStatus> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/funding
+<https://schema.org/funding> rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/mod#createdWith
