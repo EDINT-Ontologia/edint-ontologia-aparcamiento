@@ -1,4 +1,4 @@
-# Ontología EDINT de Aparcamiento
+# Ontología de Aparcamiento (The Parking Ontology)
 
 La ontología de Aparcamiento representa los datos de aparcamientos públicos y privados de un municipio. Se incluye la representación de aparcamientos dentro y fuera de la vía pública. Su alcance se limita a los datos que pueden ser utilizados con el propósito de la gestión de movilidad, es decir accesos de vehículos a los aparcamientos, nivel de ocupación, plazas según tipo de permiso (por ejemplo, residentes) y plazas según tipo de vehículo, que son parte de las funciones habituales de las entidades locales.
 
