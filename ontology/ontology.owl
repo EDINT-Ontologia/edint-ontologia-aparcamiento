@@ -49,6 +49,8 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title xml:lang="es">Ontología EDINT de Aparcamiento</dcterms:title>
         <dcterms:title xml:lang="en">EDINT Parking Ontology</dcterms:title>
+        <rdfs:label xml:lang="es">Aparcamiento</rdfs:label>
+        <rdfs:label xml:lang="en">Parking</rdfs:label>
         <vann:preferredNamespacePrefix>edintapar</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/aparcamiento#"/>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-aparcamiento/releases/tag/v0.2"/>
