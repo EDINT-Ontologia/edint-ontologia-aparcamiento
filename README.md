@@ -1,4 +1,4 @@
-# Ontología de Aparcamiento (The Parking Ontology)
+# Ontología EDINT de Aparcamiento
 
 [![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/aparcamiento)
 ![Prefijo](https://img.shields.io/badge/prefijo-edintapar-informational)
