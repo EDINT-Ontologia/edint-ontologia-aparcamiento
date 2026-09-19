@@ -13,29 +13,29 @@ mappings:
   parking:
     sources:
       - parking-source
-    s: http://vocab.linkeddata.es/datosabiertos/recurso/parking/$(pk)
+    s: http://example.org/resource/on-street-parking/$(pk)
     po:
       - [a, edintapar:OnStreetParking]
-      - [edintapar:hasParkingFee,"http://vocab.linkeddata.es/datosabiertos/recurso/tarifa-aparcamiento/$(identificador_tarifa)~iri"]
-      - [edintapar:hasSpotsByParkingPermitType,"http://vocab.linkeddata.es/datosabiertos/recurso/plaza-aparcamiento/$(identificador_plaza)~iri" ]
-      - [edintapar:hasSpotsByVehicleType, "http://vocab.linkeddata.es/datosabiertos/recurso/plazas-por-aparcamiento/$(identificador_plazas)~iri"]
-      - [edintapar:isPartOfZone, "http://vocab.linkeddata.es/datosabiertos/recurso/zona-regulatoria/$(identificador_zona)~iri"]
+      - [edintapar:hasParkingFee,"http://example.org/resource/parking-fee/$(identificador_tarifa)~iri"]
+      - [edintapar:hasSpotsByParkingPermitType,"http://example.org/resource/parking-spots-by-permit-type/$(identificador_plaza)~iri" ]
+      - [edintapar:hasSpotsByVehicleType, "http://example.org/resource/parking-spots-by-vehicle-type/$(identificador_plazas)~iri"]
+      - [edintapar:isPartOfZone, "http://example.org/resource/regulated-parking-zone/$(identificador_zona)~iri"]
       - [dct:identifier,"$(pk)"]
       - [rdfs:label, "$(nombre)"]
       - [rdfs:comment, $(descripcion_entidad)]
-      - [geosparql:hasGeometry, "http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/$(pk)~iri"]
-      - [edintinf:belongsTo, "http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/territorio/barrio/$(barrio)~iri"] # Otros e.g territorio/Comarca/D.C._Zaragoza, sector-publico/territorio/Provincia/Zaragoza
-      - [edintinf:hasObservationPoint, "http://vocab.linkeddata.es/datosabiertos/recurso/punto-de-observacion/$(punto_observ_id)~iri"] # Check FEMP-observationPoint.yml
+      - [geosparql:hasGeometry, "http://example.org/resource/geometry/$(pk)~iri"]
+      - [edintinf:belongsTo, "http://example.org/resource/barrio/$(barrio)~iri"] # Otros e.g territorio/Comarca/D.C._Zaragoza, sector-publico/territorio/Provincia/Zaragoza
+      - [edintinf:hasObservationPoint, "http://example.org/resource/observation-point/$(punto_observ_id)~iri"] # Check FEMP-observationPoint.yml
       - [edintinf:hasInfrastructureType, "edintkos:$(tipo)~iri"] # SKOS tipo_infraestructura
-      - [edintinf:hasRegisteredOwner, "http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/$(pk)~iri"] # Organizacion
-      - [schema:address, "http://vocab.linkeddata.es/datosabiertos/recurso/direccion-postal/$(codigo_postal)~iri"] # Check FEMP-postalAddress.yml
+      - [edintinf:hasRegisteredOwner, "http://example.org/resource/organization/$(pk)~iri"] # Organizacion
+      - [schema:address, "http://example.org/resource/direccion-postal/$(codigo_postal)~iri"] # Check FEMP-postalAddress.yml
       - [schema:openingHours,$(horario)]
-      - [edintinf:containsFacility,"http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/$(parent_equipamiento_municipal_id)~iri" ]
+      - [edintinf:containsFacility,"http://example.org/resource/facility/$(parent_equipamiento_municipal_id)~iri" ]
 
   locations:
     sources:
       - facility-source
-    s: http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/$(pk)
+    s: http://example.org/resource/geometry/$(pk)
     po:
       - [a, geosparql:Geometry]
       - [dct:identifier,"$(pk)"]

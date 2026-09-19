@@ -30,7 +30,7 @@
 	];
 	rr:subjectMap [
 		a rr:SubjectMap;
-		rr:template "http://vocab.linkeddata.es/datosabiertos/recurso/parking/{pk}";
+		rr:template "http://example.org/resource/on-street-parking/{pk}";
 	];
 	rr:predicateObjectMap [
 		rr:predicateMap [
@@ -49,7 +49,7 @@
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/recurso/tarifa-aparcamiento/{identificador_tarifa}";
+			rr:template "http://example.org/resource/parking-fee/{identificador_tarifa}";
 			rr:termType rr:IRI
 		];
 	];
@@ -60,7 +60,7 @@
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/recurso/plaza-aparcamiento/{identificador_plaza}";
+			rr:template "http://example.org/resource/parking-spots-by-permit-type/{identificador_plaza}";
 			rr:termType rr:IRI
 		];
 	];
@@ -71,7 +71,7 @@
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/recurso/plazas-por-aparcamiento/{identificador_plazas}";
+			rr:template "http://example.org/resource/parking-spots-by-vehicle-type/{identificador_plazas}";
 			rr:termType rr:IRI
 		];
 	];
@@ -82,7 +82,7 @@
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/recurso/zona-regulatoria/{identificador_zona}";
+			rr:template "http://example.org/resource/regulated-parking-zone/{identificador_zona}";
 			rr:termType rr:IRI
 		];
 	];
@@ -123,7 +123,7 @@
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/{pk}";
+			rr:template "http://example.org/resource/geometry/{pk}";
 			rr:termType rr:IRI
 		];
 	];
@@ -134,7 +134,7 @@
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/territorio/barrio/{barrio}";
+			rr:template "http://example.org/resource/barrio/{barrio}";
 			rr:termType rr:IRI
 		];
 	];
@@ -145,7 +145,7 @@
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/recurso/punto-de-observacion/{punto_observ_id}";
+			rr:template "http://example.org/resource/observation-point/{punto_observ_id}";
 			rr:termType rr:IRI
 		];
 	];
@@ -167,7 +167,7 @@
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/{pk}";
+			rr:template "http://example.org/resource/organization/{pk}";
 			rr:termType rr:IRI
 		];
 	];
@@ -178,7 +178,7 @@
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/recurso/direccion-postal/{codigo_postal}";
+			rr:template "http://example.org/resource/direccion-postal/{codigo_postal}";
 			rr:termType rr:IRI
 		];
 	];
@@ -199,7 +199,7 @@
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/{parent_equipamiento_municipal_id}";
+			rr:template "http://example.org/resource/facility/{parent_equipamiento_municipal_id}";
 			rr:termType rr:IRI
 		];
 	].
@@ -215,7 +215,7 @@
 	];
 	rr:subjectMap [
 		a rr:SubjectMap;
-		rr:template "http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/{pk}";
+		rr:template "http://example.org/resource/geometry/{pk}";
 	];
 	rr:predicateObjectMap [
 		rr:predicateMap [
