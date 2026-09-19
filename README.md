@@ -1,19 +1,24 @@
-# Ontología de Aparcamiento (The Parking Ontology)
+# Ontología EDINT de Aparcamiento
+
+[![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/aparcamiento)
+![Prefijo](https://img.shields.io/badge/prefijo-edintapar-informational)
+[![Licencia](https://img.shields.io/badge/licencia-CC%20BY--SA%204.0-lightgrey)](LICENSE)
 
 La ontología de Aparcamiento representa los datos de aparcamientos públicos y privados de un municipio. Se incluye la representación de aparcamientos dentro y fuera de la vía pública. Su alcance se limita a los datos que pueden ser utilizados con el propósito de la gestión de movilidad, es decir accesos de vehículos a los aparcamientos, nivel de ocupación, plazas según tipo de permiso (por ejemplo, residentes) y plazas según tipo de vehículo, que son parte de las funciones habituales de las entidades locales.
 
 
-# Propósito y alcance de la ontología (Purpose and scope of the ontology)
+## Propósito y alcance de la ontología (Purpose and scope of the ontology)
 
 El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales de los aparcamientos de un municipio. Su alcance se limita a los datos que pueden ser utilizados con los propósitos de mantener y acceder al inventario de los aparcamientos, así como gestionar su movilidad (accesos de vehículos a los aparcamientos), que son parte de las funciones habituales de las entidades locales.
 
-# Prefijo y espacio de nombres (Prefix and namespace)
-El prefijo de la ontología de Aparcamiento es: edintinfp y es publicada en el espacio de nombres: [https://edint.es/def/aparcamiento#](https://edint.es/def/aparcamiento#) 
+## Prefijo y espacio de nombres (Prefix and namespace)
 
-# Modelo conceptual (Ontology conceptualization)
+El prefijo de esta ontología es `edintapar` y se publica bajo el espacio de nombres https://edint.es/def/aparcamiento#
+
+## Modelo conceptual (Ontology conceptualization)
 ![Modelo conceptual general](diagrams/diagram.png)
 
-# Estructura del repositorio (Repository structure)
+## Estructura del repositorio (Repository structure)
 
 El repositorio contiene los siguientes directorios:
 
@@ -27,11 +32,11 @@ El repositorio contiene los siguientes directorios:
 | **requirements/** | Contains all documents used to define the ontology’s requirements: data example, competency questions, functional requirements, use cases, etc. |
 | **shapes/** | Contains the SHACL shapes used to define and validate ontology constraints. |
 
-# Mantenimiento y evolución (Maintenance and evolution)
+## Mantenimiento y evolución (Maintenance and evolution)
 
 Para manejar las incidencias o mejoras sugeridas con respecto a la ontología, recomendamos seguir las guías proporcionadas en ([Issues Management](./ISSUES.md)) para generar una incidencia.
 
-# Financiación (Funding)
+## Financiación (Funding)
 
 Esta ontología ha sido desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es/)). 
 
