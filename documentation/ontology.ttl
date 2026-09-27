@@ -22,7 +22,7 @@
 Los aparcamientos son una intalación más de la infraestructura de la ciudad por lo cual  la ontología está relacionada con la ontología de Infraestructura. Además, se representan sus puntos de acceso para lo cual se enlaza a la representación de sensores de la infraestructura."""@es ,
                                                                             "The Parking ontology represents on-street and off-street parking, which can be either public or private. Parking facilities are part of the city's infrastructure, and therefore this ontology is related to the Infrastructure ontology. Furthermore, their access points are represented, as a relationship to the infrastructure's sensor representation."@en ;
                                      <http://purl.org/dc/terms/issued> "2026-09-17"^^xsd:date ;
-                                     <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                     <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> ;
                                      <http://purl.org/dc/terms/modified> "2026-09-17"^^xsd:date ;
                                      <http://purl.org/dc/terms/publisher> _:genid6 ;
                                      <http://purl.org/dc/terms/title> "EDINT Parking Ontology"@en ,
