@@ -8,6 +8,8 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:time="http://www.w3.org/2006/time#"
@@ -16,66 +18,107 @@
      xmlns:escjr="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#"
      xmlns:esdir="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#"
      xmlns:schema="https://schema.org/"
+     xmlns:widoco="https://w3id.org/widoco/vocab#"
      xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:schema1="http://schema.org/"
      xmlns:edintinf="https://edint.es/def/infraestructura#"
      xmlns:edintveh="https://edint.es/def/censo-vehiculos#"
      xmlns:edintzone="https://edint.es/def/zona-regulatoria#"
-     xmlns:bibo="http://purl.org/ontology/bibo/"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:widoco="https://w3id.org/widoco/vocab#">
+     xmlns:kos-rztype="https://edint.es/kos/RegulatedZoneType/">
     <owl:Ontology rdf:about="https://edint.es/def/aparcamiento">
         <owl:versionIRI rdf:resource="https://edint.es/def/aparcamiento/0.2.1"/>
-        <dcterms:creator rdf:parseType="Resource">
-            <foaf:name>Daniel Doña</foaf:name>
-            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <dcterms:abstract xml:lang="es">El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales de los aparcamientos públicos y privados de un municipio. Se incluye la representación de aparcamientos dentro y fuera de la vía pública. Su alcance se limita a los datos que pueden ser utilizados con el propósito de la gestión de movilidad, es decir accesos de vehículos a los aparcamientos, nivel de ocupación, plazas según tipo de permiso (por ejemplo, residentes) y plazas según tipo de vehículo, que son parte de las funciones habituales de las entidades locales.</dcterms:abstract>
+        <dcterms:abstract xml:lang="en">The purpose of this ontology is to provide a common vocabulary for representing the main entities and data of public and private parking facilities in a municipality. It includes the representation of parking spaces both on and off public roads. Its scope is limited to data that can be used for mobility management purposes, such as vehicle access to parking facilities, occupancy levels, spaces by permit type (e.g., residents), and spaces by vehicle type, which are part of the standard functions of local authorities.</dcterms:abstract>
+        <dcterms:bibliographicCitation xml:lang="en">EDINT Parking Ontology. EDINT. Revision: v0.2.1.</dcterms:bibliographicCitation>
+        <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT de Aparcamiento. EDINT. Revisión: v0.2.1.</dcterms:bibliographicCitation>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-03</dcterms:created>
+        <dcterms:creator>
+            <rdf:Description>
+                <foaf:name>Edna Ruckhaus</foaf:name>
+                <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+            </rdf:Description>
         </dcterms:creator>
-        <dcterms:creator rdf:parseType="Resource">
-            <foaf:name>Edna Ruckhaus</foaf:name>
-            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <dcterms:creator>
+            <rdf:Description>
+                <foaf:name>Daniel Doña</foaf:name>
+                <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+            </rdf:Description>
         </dcterms:creator>
-        <dcterms:creator rdf:parseType="Resource">
-            <foaf:name>Lucía Sánchez</foaf:name>
-            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <dcterms:creator>
+            <rdf:Description>
+                <foaf:name>Socorro Bernardos</foaf:name>
+                <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+            </rdf:Description>
         </dcterms:creator>
-        <dcterms:creator rdf:parseType="Resource">
-            <foaf:name>Oscar Corcho</foaf:name>
-            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <dcterms:creator>
+            <rdf:Description>
+                <foaf:name>Oscar Corcho</foaf:name>
+                <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+            </rdf:Description>
         </dcterms:creator>
-        <dcterms:creator rdf:parseType="Resource">
-            <foaf:name>Socorro Bernardos</foaf:name>
-            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <dcterms:creator>
+            <rdf:Description>
+                <foaf:name>Lucía Sánchez</foaf:name>
+                <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+            </rdf:Description>
         </dcterms:creator>
         <dcterms:description xml:lang="es">La ontología de Aparcamiento representa los aparcamientos en la vía pública y los que están fuera de la vía pública, los cuales a su vez pueden ser públicos o privados. 
 Los aparcamientos son una intalación más de la infraestructura de la ciudad por lo cual  la ontología está relacionada con la ontología de Infraestructura. Además, se representan sus puntos de acceso para lo cual se enlaza a la representación de sensores de la infraestructura.</dcterms:description>
         <dcterms:description xml:lang="en">The Parking ontology represents on-street and off-street parking, which can be either public or private. Parking facilities are part of the city&apos;s infrastructure, and therefore this ontology is related to the Infrastructure ontology. Furthermore, their access points are represented, as a relationship to the infrastructure&apos;s sensor representation.</dcterms:description>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dcterms:title xml:lang="es">Ontología EDINT de Aparcamiento</dcterms:title>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
+        <dcterms:publisher>
+            <rdf:Description>
+                <foaf:homepage rdf:resource="https://www.femp.es/"/>
+                <foaf:name>FEMP</foaf:name>
+                <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+            </rdf:Description>
+        </dcterms:publisher>
         <dcterms:title xml:lang="en">EDINT Parking Ontology</dcterms:title>
-        <rdfs:label xml:lang="es">Aparcamiento</rdfs:label>
-        <rdfs:label xml:lang="en">Parking</rdfs:label>
+        <dcterms:title xml:lang="es">Ontología EDINT de Aparcamiento</dcterms:title>
         <vann:preferredNamespacePrefix>edintapar</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/aparcamiento#"/>
+        <rdfs:label xml:lang="es">Aparcamiento</rdfs:label>
+        <rdfs:label xml:lang="en">Parking</rdfs:label>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-aparcamiento/releases/tag/v0.2"/>
-        <schema:codeRepository rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-aparcamiento"/>
-        <schema:funding>Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)</schema:funding>
         <owl:versionInfo>0.2.1</owl:versionInfo>
-        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-03</dcterms:created>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:issued>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
-        <dcterms:publisher rdf:parseType="Resource">
-            <foaf:name>FEMP</foaf:name>
-            <foaf:homepage rdf:resource="https://www.femp.es/"/>
-            <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
-        </dcterms:publisher>
-    <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT de Aparcamiento. EDINT. Revisión: v0.2.1.</dcterms:bibliographicCitation>
-    <dcterms:bibliographicCitation xml:lang="en">EDINT Parking Ontology. EDINT. Revision: v0.2.1.</dcterms:bibliographicCitation>
-    <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
-    <dcterms:abstract xml:lang="es">El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales de los aparcamientos públicos y privados de un municipio. Se incluye la representación de aparcamientos dentro y fuera de la vía pública. Su alcance se limita a los datos que pueden ser utilizados con el propósito de la gestión de movilidad, es decir accesos de vehículos a los aparcamientos, nivel de ocupación, plazas según tipo de permiso (por ejemplo, residentes) y plazas según tipo de vehículo, que son parte de las funciones habituales de las entidades locales.</dcterms:abstract>
-    <dcterms:abstract xml:lang="en">The purpose of this ontology is to provide a common vocabulary for representing the main entities and data of public and private parking facilities in a municipality. It includes the representation of parking spaces both on and off public roads. Its scope is limited to data that can be used for mobility management purposes, such as vehicle access to parking facilities, occupancy levels, spaces by permit type (e.g., residents), and spaces by vehicle type, which are part of the standard functions of local authorities.</dcterms:abstract>
-</owl:Ontology>
-    <foaf:Organization rdf:about="https://oeg.fi.upm.es/">
-        <foaf:name>Ontology Engineering Group, UPM</foaf:name>
-    </foaf:Organization>
+        <schema:codeRepository rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-aparcamiento"/>
+        <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
+        <schema:funding>Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)</schema:funding>
+        <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
+        <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
+        <widoco:rdfxmlSerialization>ontology.rdf</widoco:rdfxmlSerialization>
+        <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="es">Censo de Vehículos (edintveh)</rdfs:label>
+                <rdfs:label xml:lang="en">Vehicle Census (edintveh)</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/censovehiculos"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
+                <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="en">Regulated Zones (edintzone)</rdfs:label>
+                <rdfs:label xml:lang="es">Zonas Regulatorias (edintzone)</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/zona-regulatoria"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
+                <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+    </owl:Ontology>
     
 
 
@@ -93,6 +136,18 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     <!-- http://purl.org/dc/elements/1.1/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
 
 
@@ -129,6 +184,18 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
     
 
 
@@ -192,9 +259,81 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- https://schema.org/affiliation -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/affiliation"/>
+    
+
+
+    <!-- https://schema.org/codeRepository -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/codeRepository"/>
+    
+
+
+    <!-- https://schema.org/creativeWorkStatus -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/creativeWorkStatus"/>
+    
+
+
+    <!-- https://schema.org/funding -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/funding"/>
+    
+
+
     <!-- https://w3id.org/mod#createdWith -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#jsonldSerialization -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#jsonldSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#ntSerialization -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#ntSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#rdfxmlSerialization -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#rdfxmlSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#turtleSerialization -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#turtleSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#vocabularyIRI -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#vocabularyIRI"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#vocabularyLabel -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#vocabularyLabel"/>
     
 
 
@@ -309,7 +448,17 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     <owl:ObjectProperty rdf:about="https://edint.es/def/aparcamiento#isPartOfZone">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://edint.es/def/aparcamiento#OnStreetParking"/>
-        <rdfs:range rdf:resource="https://edint.es/def/zona-regulatoria#RegulatedParkingZone"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://edint.es/def/zona-regulatoria#RegulatedZone"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://edint.es/def/zona-regulatoria/hasRegulatedZoneType"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/RegulatedZoneType/RegulatedParkingZone"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment xml:lang="es">Relación entre un grupo de plazas de aparcamiento en la vía pública y la zona de estacionamiento regulado a la cual pertenecen.</rdfs:comment>
         <rdfs:comment xml:lang="en">Relationship between a group of parking spaces on a street and the regulated parking zone to which they belong.</rdfs:comment>
         <rdfs:label xml:lang="es">es parte de zona</rdfs:label>
@@ -387,6 +536,29 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     
 
 
+    <!-- https://edint.es/def/zona-regulatoria/hasRegulatedZoneType -->
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/zona-regulatoria/hasRegulatedZoneType">
+        <rdfs:domain rdf:resource="https://edint.es/def/zona-regulatoria#RegulatedZone"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://edint.es/def/zona-regulatoria#RegulatedZoneType"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="es">Vincula una zona regulada a su clasificación de tipo del esquema de conceptos SKOS RegulatedZoneType.</rdfs:comment>
+        <rdfs:comment xml:lang="en">inks a regulated zone to its type classification from the RegulatedZoneType SKOS concept scheme.</rdfs:comment>
+        <rdfs:label xml:lang="en">has regulated zone type</rdfs:label>
+        <rdfs:label xml:lang="es">tiene tipo de zona regulada</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -455,6 +627,12 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
     
 
 
@@ -561,18 +739,6 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     
 
 
-    <!-- https://edint.es/def/zona-regulatoria#RegulatedParkingZone -->
-
-    <owl:Class rdf:about="https://edint.es/def/zona-regulatoria#RegulatedParkingZone">
-        <rdfs:subClassOf rdf:resource="https://edint.es/def/zona-regulatoria#RegulatedZone"/>
-        <rdfs:comment xml:lang="en">Public road zone where parking is subject to time regulation, fee payment, or other restrictions.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Zona de la vía pública donde el estacionamiento está sujeto a regulación horaria, pago de tasas u otras restricciones.</rdfs:comment>
-        <rdfs:label xml:lang="en">Regulated parking zone</rdfs:label>
-        <rdfs:label xml:lang="es">Zona de estacionamiento regulado</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://edint.es/def/zona-regulatoria#RegulatedZone -->
 
     <owl:Class rdf:about="https://edint.es/def/zona-regulatoria#RegulatedZone">
@@ -595,50 +761,89 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     
 
 
+    <!-- https://edint.es/def/zona-regulatoria#RegulatedZoneType -->
+
+    <owl:NamedIndividual rdf:about="https://edint.es/def/zona-regulatoria#RegulatedZoneType">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://edint.es/kos/VehiclePermitType -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/kos/VehiclePermitType"/>
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/VehiclePermitType">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- https://edint.es/kos/VehicleType -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/kos/VehicleType"/>
-    <!-- Nombres de fichero de las serializaciones generadas (vocabulario Widoco) -->
-    <owl:Ontology rdf:about="https://edint.es/def/aparcamiento">
-        <widoco:rdfxmlSerialization>ontology.rdf</widoco:rdfxmlSerialization>
-        <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
-        <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
-        <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
-            <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
-                <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
-                <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/censovehiculos"/>
-                <rdfs:label xml:lang="es">Censo de Vehículos (edintveh)</rdfs:label>
-                <rdfs:label xml:lang="en">Vehicle Census (edintveh)</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
-                <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
-                <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/zona-regulatoria"/>
-                <rdfs:label xml:lang="es">Zonas Regulatorias (edintzone)</rdfs:label>
-                <rdfs:label xml:lang="en">Regulated Zones (edintzone)</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-</owl:Ontology>
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/VehicleType">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://edint.es/kos/RegulatedZoneType/RegulatedParkingZone -->
+
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/RegulatedZoneType/RegulatedParkingZone">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://oeg.fi.upm.es/ -->
+
+    <owl:NamedIndividual rdf:about="https://oeg.fi.upm.es/">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:name>Ontology Engineering Group, UPM</foaf:name>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <foaf:name>Edna Ruckhaus</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Daniel Doña</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Socorro Bernardos</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Oscar Corcho</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Lucía Sánchez</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="es">Censo de Vehículos (edintveh)</rdfs:label>
+        <rdfs:label xml:lang="en">Vehicle Census (edintveh)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="https://edint.es/def/censovehiculos"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
+        <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">Regulated Zones (edintzone)</rdfs:label>
+        <rdfs:label xml:lang="es">Zonas Regulatorias (edintzone)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="https://edint.es/def/zona-regulatoria"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
+        <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:homepage rdf:resource="https://www.femp.es/"/>
+        <foaf:name>FEMP</foaf:name>
+        <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+    </rdf:Description>
 </rdf:RDF>
 
 
