@@ -1,0 +1,288 @@
+@prefix : <https://edint.es/def/aparcamiento#> .
+@prefix edintinf: <https://edint.es/def/infraestructura#> .
+@prefix edintzone: <https://edint.es/def/zona-regulatoria#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://astrea.linkeddata.es/shapes#04a4a286c7ae0701ee654c606a80ffa8> a sh:NodeShape ;
+    rdfs:label "Group of parking spots by vehicle type"@en,
+        "Grupo de plazas por tipo de vehículo"@es ;
+    sh:description "Group of parking spots for each type of vehicle: cars, motorcycles, bicycles, among others. It indicates the number of slots per type."@en,
+        "Grupo de plazas de aparcamiento para cada tipo de vehículo: coches, motocicletas, biciletas, entre otros. Indica el número de plazas por tipo."@es ;
+    sh:name "Group of parking spots by vehicle type"@en,
+        "Grupo de plazas por tipo de vehículo"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#7d540ca2d0e2b59ad8760abe686ddb05>,
+        <https://astrea.linkeddata.es/shapes#de4a2a2c653b8b84747c854220c1a5fa> ;
+    sh:targetClass :ParkingSpotsByVehicleType .
+
+<https://astrea.linkeddata.es/shapes#163744438032c52e32bf3c7c8bb195e8> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://www.opengis.net/ont/sf#Point> .
+
+<https://astrea.linkeddata.es/shapes#1edec7068d03129d92604b36356d00db> sh:nodeKind sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#25b4febae27c526a5c9fd92c4089b676> rdfs:label "has regulated zone type"@en,
+        "inks a regulated zone to its type classification from the RegulatedZoneType SKOS concept scheme."@en,
+        "Vincula una zona regulada a su clasificación de tipo del esquema de conceptos SKOS RegulatedZoneType."@es,
+        "tiene tipo de zona regulada"@es ;
+    sh:description "inks a regulated zone to its type classification from the RegulatedZoneType SKOS concept scheme."@en,
+        "Vincula una zona regulada a su clasificación de tipo del esquema de conceptos SKOS RegulatedZoneType."@es ;
+    sh:name "has regulated zone type"@en,
+        "tiene tipo de zona regulada"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#2c82ff73141966e6789c149dbd53c5fd> rdfs:label "Tipo de vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de vehículo (por ejemplo, turismo, furgoneta, caravana, etc.)"@en,
+        "vehicle type"@en,
+        "Type of vehicle. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., van, truck, caravan, etc.)."@es,
+        "tipo de vehiculo"@es ;
+    sh:description "Tipo de vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de vehículo (por ejemplo, turismo, furgoneta, caravana, etc.)"@en,
+        "Type of vehicle. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., van, truck, caravan, etc.)."@es ;
+    sh:name "vehicle type"@en,
+        "tipo de vehiculo"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#37965e0183e52604b4172e4f7ea4055a> a sh:NodeShape ;
+    rdfs:label "Facility"@en,
+        "Equipamiento"@es ;
+    sh:description "Facilities that citizens can access and that belong to public or private organizations. A facility can be a parking lot, an educational center, a bike-sharing station, or any facility that serves as a health center, educational center, community center, police station, among others."@en,
+        "Equipamientos a los que un ciudadano puede acudir pertenecientes a una organización pública o privadal. Un equipamiento puede ser un aparcamiento, un centro educativo, una estación de bicicleta compartida y cualquier instalación que sea un centro de salud, centro educativo, centro social, comisaría, entre otros."@es ;
+    sh:name "Facility"@en,
+        "Equipamiento"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass edintinf:Facility .
+
+<https://astrea.linkeddata.es/shapes#496cd065816ca249fb70fde50d7f34a2> a sh:PropertyShape ;
+    rdfs:label "Relationship between an infrastructure element and an observation point by some sensor."@en,
+        "has observation point"@en,
+        "Relación entre un elemento de la infraestructura y un punto de observación por algún sensor."@es,
+        "tiene punto de observación"@es ;
+    sh:class edintinf:ObservationPoint ;
+    sh:description "Relationship between an infrastructure element and an observation point by some sensor."@en,
+        "Relación entre un elemento de la infraestructura y un punto de observación por algún sensor."@es ;
+    sh:name "has observation point"@en,
+        "tiene punto de observación"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path edintinf:hasObservationPoint .
+
+<https://astrea.linkeddata.es/shapes#5192bd4012546876e17387cec79301a1> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass foaf:Organization .
+
+<https://astrea.linkeddata.es/shapes#635ec764679010541144adaee0c47d4e> rdfs:label "Relationship between the observation point and the sensor that performs the observation."@en,
+        "has sensor"@en,
+        "Relación ente el punto de observación y el sensor que realiza la observación."@es,
+        "tiene sensor"@es ;
+    sh:description "Relationship between the observation point and the sensor that performs the observation."@en,
+        "Relación ente el punto de observación y el sensor que realiza la observación."@es ;
+    sh:name "has sensor"@en,
+        "tiene sensor"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#69bfc24827569ed9036ecae89a53d3c7> a sh:PropertyShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path skos:inScheme .
+
+<https://astrea.linkeddata.es/shapes#7af058b2477a42007c1adc7b40a2fb08> rdfs:label "Relationship between the group of places by type of permit and the taxonomy of types of permit."@en,
+        "permit type"@en,
+        "Relación entre el Grupo de plazas por tipo de permiso y la taxonomía de tipos de permiso."@es,
+        "tipo de permiso"@es ;
+    sh:description "Relationship between the group of places by type of permit and the taxonomy of types of permit."@en,
+        "Relación entre el Grupo de plazas por tipo de permiso y la taxonomía de tipos de permiso."@es ;
+    sh:name "permit type"@en,
+        "tipo de permiso"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#811b521d98062a57b55470483732681d> a sh:NodeShape ;
+    rdfs:label "Group of parking spots by type of permit"@en,
+        "Grupo de plazas por tipo de permiso"@es ;
+    sh:description "Group of parking spots for each type of permit, for example Resident. It indicates the number of slots  for each type."@en,
+        "Grupo de plazas por cada tipo de permiso, por ejemplo Residente. Indica el número de plazas por cada tipo."@es ;
+    sh:name "Group of parking spots by type of permit"@en,
+        "Grupo de plazas por tipo de permiso"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#7d540ca2d0e2b59ad8760abe686ddb05>,
+        <https://astrea.linkeddata.es/shapes#de4a2a2c653b8b84747c854220c1a5fa> ;
+    sh:targetClass :ParkingSpotsByPermitType .
+
+<https://astrea.linkeddata.es/shapes#81f8e8162eaf62938a3c8d86bc83e757> a sh:NodeShape ;
+    rdfs:label "Parking spot"@en,
+        "Plaza (de aparcamiento)"@es ;
+    sh:description "Individual parking spot in an on-street or off-street parking."@en,
+        "Plaza individual de estacionamiento dentro o fuera de la vía pública."@es ;
+    sh:name "Parking spot"@en,
+        "Plaza (de aparcamiento)"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :ParkingSpot .
+
+<https://astrea.linkeddata.es/shapes#86cac526266f2157d3917ee5d2f3fc8a> a sh:NodeShape ;
+    rdfs:label "On-street parking"@en,
+        "Aparcamiento en la vía pública"@es ;
+    sh:description "On-street parking that includes spaces for residents, non-residents, free spaces, loading and unloading, among others."@en,
+        "Aparcamiento en la vía pública que inluye plazas para residentes, no residentes, libres, carga y descarga, entre otros."@es ;
+    sh:name "On-street parking"@en,
+        "Aparcamiento en la vía pública"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :OnStreetParking .
+
+<https://astrea.linkeddata.es/shapes#8c9f0a3ef50fe390869f7c693885d425> a sh:NodeShape ;
+    rdfs:label "Feature"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0> ;
+    sh:description "Esta clase representa el tipo \"feature\" de nivel superior. Es equivalente a GFI_Feature, definida en la norma ISO 19156:2011, y es la superclase de todos los tipos de \"feature\"."@es ;
+    sh:name "Feature"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass geo:Feature .
+
+<https://astrea.linkeddata.es/shapes#aef1a78016b3598e01dd7671934b50b4> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass skos:ConceptScheme .
+
+<https://astrea.linkeddata.es/shapes#baa8950050598af3d28de986ca252f0c> a sh:NodeShape ;
+    rdfs:label "Off-street parking"@en,
+        "Aparcamiento fuera de la vía pública"@es ;
+    sh:description "Off-street parking, including parking facilities or parking surfaces."@en,
+        "Aparcamiento fuera de la vía pública. Incluye instalaciones o superficies de aparcamiento."@es ;
+    sh:name "Off-street parking"@en,
+        "Aparcamiento fuera de la vía pública"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :OffStreetParking .
+
+<https://astrea.linkeddata.es/shapes#c7fa4c9861b11fc4ea607aa737e4b7e2> a sh:NodeShape ;
+    rdfs:label "Parking fee"@en,
+        "Tarifa"@es ;
+    sh:description "Parking fee that essentially covers the right to park the vehicle in an authorized space for a certain time period."@en,
+        "Tarifa de un aparcamiento que cubre fundamentalmente el derecho a estacionar el vehículo en un espacio autorizado durante un tiempo determinado."@es ;
+    sh:name "Parking fee"@en,
+        "Tarifa"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :ParkingFee .
+
+<https://astrea.linkeddata.es/shapes#cb52ef0e182c3ccca32e2718a387be2d> rdfs:label "Relationship between a group of parking spaces on a street and the regulated parking zone to which they belong."@en,
+        "is part of zone"@en,
+        "Relación entre un grupo de plazas de aparcamiento en la vía pública y la zona de estacionamiento regulado a la cual pertenecen."@es,
+        "es parte de zona"@es ;
+    sh:description "Relationship between a group of parking spaces on a street and the regulated parking zone to which they belong."@en,
+        "Relación entre un grupo de plazas de aparcamiento en la vía pública y la zona de estacionamiento regulado a la cual pertenecen."@es ;
+    sh:name "is part of zone"@en,
+        "es parte de zona"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#e30e67ada342f91e399e580a75f7d3c8> a sh:NodeShape ;
+    rdfs:label "Parking"@en,
+        "Aparcamiento"@es ;
+    sh:description "Parking for different types of vehicles, including off-street parking facilities or on-street parking zones for residents, non-residents, or free parking."@en,
+        "Aparcamiento para diferentes tipos de vehículo que incluye instalaciones o superficies de aparcamiento fuera de la vía pública o zonas de aparcamiento en la vía pública para residentes, no residentes o libres."@es ;
+    sh:name "Parking"@en,
+        "Aparcamiento"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#045690335e7fbbcc73c85db63e4c841d>,
+        <https://astrea.linkeddata.es/shapes#3863fd2e73c54d98a352742d3c1c7c71>,
+        <https://astrea.linkeddata.es/shapes#7d540ca2d0e2b59ad8760abe686ddb05>,
+        <https://astrea.linkeddata.es/shapes#b72f5e2e4d69f98d30ce176e5a5279e9>,
+        <https://astrea.linkeddata.es/shapes#de4a2a2c653b8b84747c854220c1a5fa> ;
+    sh:targetClass :Parking .
+
+<https://astrea.linkeddata.es/shapes#eaf2c10cf9227899717c2c47188a1ebf> rdfs:label "Public service provided by a municipal facility, for example internet via wifi."@en,
+        "provides public service"@en,
+        "Servicio público prestado por un equipamiento municipal, por ejemplo internet a través de una wifi."@es,
+        "presta servicio público"@es ;
+    sh:description "Public service provided by a municipal facility, for example internet via wifi."@en,
+        "Servicio público prestado por un equipamiento municipal, por ejemplo internet a través de una wifi."@es ;
+    sh:name "provides public service"@en,
+        "presta servicio público"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#f097725592be6811a9535c15104cbb83> a sh:NodeShape ;
+    rdfs:label "Regulated zone"@en,
+        "Zona regulatoria"@es ;
+    sh:description "Area to which a particular regulation or policy applies."@en,
+        "Area a la que se aplica una regulacion o normativa particular."@es ;
+    sh:name "Regulated zone"@en,
+        "Zona regulatoria"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass edintzone:RegulatedZone .
+
+<https://astrea.linkeddata.es/shapes#fe83e5933031e0c73639829999e1fc92> a sh:NodeShape ;
+    rdfs:label "Observation point"@en,
+        "Punto de observación"@es ;
+    sh:description "Points where access or counting observations can be made using sensors."@en,
+        "Puntos en donde se pueden realizar observaciones de acceso o de conteo a través de sensores."@es ;
+    sh:name "Observation point"@en,
+        "Punto de observación"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass edintinf:ObservationPoint .
+
+<https://astrea.linkeddata.es/shapes#ffeaf0d3664c31215f614a64f5bb45a5> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass skos:Concept .
+
+<https://astrea.linkeddata.es/shapes#045690335e7fbbcc73c85db63e4c841d> a sh:PropertyShape ;
+    rdfs:label "Relationship between the Parking and its Group of spots by vehicle type."@en,
+        "has a group of spots per type of vehicle"@en,
+        "Relación entre el Aparcamiento y  su Grupo de plazas por tipo de vehículo."@es,
+        "tiene grupo de plazas por tipo de vehiculo"@es ;
+    sh:class :ParkingSpotsByVehicleType ;
+    sh:description "Relationship between the Parking and its Group of spots by vehicle type."@en,
+        "Relación entre el Aparcamiento y  su Grupo de plazas por tipo de vehículo."@es ;
+    sh:name "has a group of spots per type of vehicle"@en,
+        "tiene grupo de plazas por tipo de vehiculo"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :hasSpotsByVehicleType .
+
+<https://astrea.linkeddata.es/shapes#3863fd2e73c54d98a352742d3c1c7c71> a sh:PropertyShape ;
+    rdfs:label "Relationship between a parking and its fee."@en,
+        "has parking fee"@en,
+        "Relación entre un aparcamiento y su tarifa."@es,
+        "tiene tarifa de aparcamiento"@es ;
+    sh:class :ParkingFee ;
+    sh:description "Relationship between a parking and its fee."@en,
+        "Relación entre un aparcamiento y su tarifa."@es ;
+    sh:name "has parking fee"@en,
+        "tiene tarifa de aparcamiento"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :hasParkingFee .
+
+<https://astrea.linkeddata.es/shapes#b72f5e2e4d69f98d30ce176e5a5279e9> a sh:PropertyShape ;
+    rdfs:label "Relationship between the Parking and its Group of spaces by type of permit, for example Rotation Spaces, Residents, Reduced Mobility, etc."@en,
+        "has a group of spots per type of permit"@en,
+        "Relación entre el Aparcamiento y su Grupo de plazas por tipo de permiso, por ejemplo Plazas de Rotación, Residentes, Movilidad Reducida, etc."@es,
+        "tiene grupo de plazas por tipo de permiso"@es ;
+    sh:class :ParkingSpotsByPermitType ;
+    sh:description "Relationship between the Parking and its Group of spaces by type of permit, for example Rotation Spaces, Residents, Reduced Mobility, etc."@en,
+        "Relación entre el Aparcamiento y su Grupo de plazas por tipo de permiso, por ejemplo Plazas de Rotación, Residentes, Movilidad Reducida, etc."@es ;
+    sh:name "has a group of spots per type of permit"@en,
+        "tiene grupo de plazas por tipo de permiso"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :hasSpotsByParkingPermitType .
+
+<https://astrea.linkeddata.es/shapes#7d540ca2d0e2b59ad8760abe686ddb05> a sh:PropertyShape ;
+    rdfs:label "Relationship between  the parking or a group of parking spots and the specific spots it contains."@en,
+        "has parking spot"@en,
+        "Relación entre el aparcamiento o el grupo de plazas de un aparcamiento y las plazas específicas que contiene."@es,
+        "tiene plaza de aparcamiento"@es ;
+    sh:class :ParkingSpot ;
+    sh:description "Relationship between  the parking or a group of parking spots and the specific spots it contains."@en,
+        "Relación entre el aparcamiento o el grupo de plazas de un aparcamiento y las plazas específicas que contiene."@es ;
+    sh:name "has parking spot"@en,
+        "tiene plaza de aparcamiento"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :hasParkingSpot .
+
+<https://astrea.linkeddata.es/shapes#de4a2a2c653b8b84747c854220c1a5fa> a sh:PropertyShape ;
+    rdfs:label "Number of parking spots. Can be used to represent the total number of spots, or the  number of spots by vehicle type or by permit type. For example, 50 spots for cars, 10 for motorcycles."@en,
+        "number of parking spots"@en,
+        "Número de plazas de aparcamiento. Se puede usar para representar el número total de plazas, o el número de plazas por tipo de vehículo o por tipo de permiso. Por ejemplo, 50 plazas para coches y 10 para motos."@es,
+        "número de plazas de aparcamiento"@es ;
+    sh:datatype xsd:integer ;
+    sh:description "Number of parking spots. Can be used to represent the total number of spots, or the  number of spots by vehicle type or by permit type. For example, 50 spots for cars, 10 for motorcycles."@en,
+        "Número de plazas de aparcamiento. Se puede usar para representar el número total de plazas, o el número de plazas por tipo de vehículo o por tipo de permiso. Por ejemplo, 50 plazas para coches y 10 para motos."@es ;
+    sh:name "number of parking spots"@en,
+        "número de plazas de aparcamiento"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :numberOfParkingSpots ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
