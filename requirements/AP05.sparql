@@ -6,7 +6,7 @@ PREFIX edintapar: <https://edint.es/def/aparcamiento#>
 SELECT ?parking
 WHERE {
   ?parking a edintapar:OnStreetParking ;
-           edintapar:isPartOfZone <URI_DE_LA_ZONA_REGULADA> .
+           edintapar:isPartOfZone <http://example.org/placeholder/URI_DE_LA_ZONA_REGULADA> .
 }
 ORDER BY ?parking
 
@@ -21,7 +21,7 @@ WHERE {
   ?parking a edintapar:OnStreetParking ;
            edintapar:isPartOfZone ?zone .
 
-  FILTER (?zone = <URI_DE_LA_ZONA_REGULADA>)
+  FILTER (?zone = <http://example.org/placeholder/URI_DE_LA_ZONA_REGULADA>)
 
   OPTIONAL { ?zone rdfs:label ?zoneLabel . }
 }

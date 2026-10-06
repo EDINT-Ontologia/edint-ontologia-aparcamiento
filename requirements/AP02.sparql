@@ -5,7 +5,7 @@ PREFIX edintapar: <https://edint.es/def/aparcamiento#>
 
 SELECT ?parking ?fee
 WHERE {
-  VALUES ?parking { <URI_DEL_APARCAMIENTO> }
+  VALUES ?parking { <http://example.org/placeholder/URI_DEL_APARCAMIENTO> }
 
   ?parking edintapar:hasParkingFee ?fee .
 }
@@ -17,7 +17,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?parking ?fee ?label ?comment
 WHERE {
-  VALUES ?parking { <URI_DEL_APARCAMIENTO> }
+  VALUES ?parking { <http://example.org/placeholder/URI_DEL_APARCAMIENTO> }
 
   ?parking edintapar:hasParkingFee ?fee .
   

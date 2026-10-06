@@ -19,19 +19,19 @@ ORDER BY ?parking
 
 # Con nombre/etiqueta
 
-PREFIX esintinfp: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructurapublica#>
+PREFIX edintapar: <https://edint.es/def/aparcamiento#>
 PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?parking ?label ?tipo
 WHERE {
   {
-    ?parking a esintinfp:OnStreetParking .
+    ?parking a edintapar:OnStreetParking .
     OPTIONAL { ?parking rdfs:label ?label }
     BIND("En vía pública" AS ?tipo)
   }
   UNION
   {
-    ?parking a esintinfp:OffStreetParking .
+    ?parking a edintapar:OffStreetParking .
     OPTIONAL { ?parking rdfs:label ?label }
     BIND("Fuera de vía pública" AS ?tipo)
   }
