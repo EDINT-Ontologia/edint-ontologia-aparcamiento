@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0" pages="2">
   <diagram name="Aparcamiento" id="TwNkGNfd34o53ypIZz1M">
-    <mxGraphModel dx="1201" dy="819" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="976" dy="693" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -85,7 +85,7 @@
             <mxPoint x="790" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aM4D_WBH-ietGMfle2C--15" connectable="0" parent="aM4D_WBH-ietGMfle2C--14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="edeintinfp:permitType&lt;div&gt;(tipoPermiso)&lt;/div&gt;" vertex="1">
+        <mxCell id="aM4D_WBH-ietGMfle2C--15" connectable="0" parent="aM4D_WBH-ietGMfle2C--14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="edintveh:permitType&lt;div&gt;(tipoPermiso)&lt;/div&gt;" vertex="1">
           <mxGeometry relative="1" x="0.0581" y="1" as="geometry">
             <mxPoint x="-5" y="1" as="offset" />
           </mxGeometry>
@@ -240,10 +240,15 @@
         <mxCell id="SDGcg2sBtDyhT6qqjPJe-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#36393d;" value="edintinf:Facility&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(Equipamiento)&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="40" width="150" x="700" y="407" as="geometry" />
         </mxCell>
-        <mxCell id="SDGcg2sBtDyhT6qqjPJe-8" edge="1" parent="1" source="SDGcg2sBtDyhT6qqjPJe-7" style="endArrow=block;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endFill=0;" target="SDGcg2sBtDyhT6qqjPJe-3" value="">
+        <mxCell id="SDGcg2sBtDyhT6qqjPJe-8" edge="1" parent="1" source="SDGcg2sBtDyhT6qqjPJe-7" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=-0.003;entryY=0.475;entryDx=0;entryDy=0;endFill=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;startArrow=classic;startFill=1;" target="aM4D_WBH-ietGMfle2C--23" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint x="730" y="416" as="sourcePoint" />
             <mxPoint x="780" y="366" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M6z2vCFBtbfqEJ-55EEy-1" connectable="0" parent="SDGcg2sBtDyhT6qqjPJe-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="edintapar:parkingAssociatedWith&lt;div&gt;(aparcamiento&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;VinculadoCon)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0547" y="2" as="geometry">
+            <mxPoint x="-47" y="-38" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vC53ioBcbVEjaRbYSiIf-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;fontSize=11;" value="" vertex="1">
@@ -278,7 +283,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Aparcamiento-with-DP" id="RbvxxaXw7PnYH7GkCDkx">
-    <mxGraphModel dx="1201" dy="819" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="976" dy="693" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="GLeXs0CCM60fRZWJRNNO-0" />
         <mxCell id="GLeXs0CCM60fRZWJRNNO-1" parent="GLeXs0CCM60fRZWJRNNO-0" />
@@ -357,7 +362,7 @@
             <mxPoint x="829" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GLeXs0CCM60fRZWJRNNO-18" connectable="0" parent="GLeXs0CCM60fRZWJRNNO-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="edeintinfp:permitType&lt;div&gt;(tipoPermiso)&lt;/div&gt;" vertex="1">
+        <mxCell id="GLeXs0CCM60fRZWJRNNO-18" connectable="0" parent="GLeXs0CCM60fRZWJRNNO-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="edintveh:permitType&lt;div&gt;(tipoPermiso)&lt;/div&gt;" vertex="1">
           <mxGeometry relative="1" x="0.0581" y="1" as="geometry">
             <mxPoint x="-5" y="1" as="offset" />
           </mxGeometry>
@@ -565,6 +570,17 @@
             <mxPoint as="offset" />
             <mxPoint x="1700" y="760" as="sourcePoint" />
             <mxPoint x="1750" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IOM1pGNh37IvLBcxV_Jv-0" edge="1" parent="GLeXs0CCM60fRZWJRNNO-1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="0H9euSISC_OG7rXJ311K-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="940" y="550" as="sourcePoint" />
+            <mxPoint x="990" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IOM1pGNh37IvLBcxV_Jv-1" connectable="0" parent="IOM1pGNh37IvLBcxV_Jv-0" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="edintapar:parkingAssociatedWith&lt;div&gt;(aparcamiento&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;VinculadoCon)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.5327" y="2" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
