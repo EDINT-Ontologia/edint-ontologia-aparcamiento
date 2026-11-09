@@ -115,7 +115,7 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
             <rdf:Description>
                 <rdfs:label xml:lang="es">Censo de Vehículos (edintveh)</rdfs:label>
                 <rdfs:label xml:lang="en">Vehicle Census (edintveh)</rdfs:label>
-                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/censovehiculos"/>
+                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/censo-vehiculos"/>
             </rdf:Description>
         </widoco:vocabularyLabel>
     </owl:Ontology>
@@ -472,7 +472,7 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     <owl:ObjectProperty rdf:about="https://edint.es/def/aparcamiento#parkingAssociatedWith">
         <rdfs:domain rdf:resource="https://edint.es/def/aparcamiento#OffStreetParking"/>
         <rdfs:range rdf:resource="https://edint.es/def/infraestructura#Facility"/>
-        <rdfs:comment xml:lang="es">Reación entre un aparcamiento de la vía pública y el equipamiento al cual está vinculado. Por ejemplo, un aparcamiento puede estar vinvulado a un hospital.
+        <rdfs:comment xml:lang="es">Relación entre un aparcamiento de la vía pública y el equipamiento al cual está vinculado. Por ejemplo, un aparcamiento puede estar vinvulado a un hospital.
 Es de interés los aparcamientos vinculados a estaciones de tren que permiten manejar la intermodalidad del transporte.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship between an off-street parking and the facility to which it is linked. For example, a parking might be linked to a hospital.
 Parking areas linked to train stations are of particular interest, as they facilitate intermodal transport.</rdfs:comment>
@@ -852,7 +852,7 @@ Parking areas linked to train stations are of particular interest, as they facil
     <rdf:Description>
         <rdfs:label xml:lang="es">Censo de Vehículos (edintveh)</rdfs:label>
         <rdfs:label xml:lang="en">Vehicle Census (edintveh)</rdfs:label>
-        <widoco:vocabularyIRI rdf:resource="https://edint.es/def/censovehiculos"/>
+        <widoco:vocabularyIRI rdf:resource="https://edint.es/def/censo-vehiculos"/>
     </rdf:Description>
     <rdf:Description>
         <foaf:homepage rdf:resource="https://www.femp.es/"/>
@@ -872,7 +872,7 @@ Parking areas linked to train stations are of particular interest, as they facil
     <rdf:Description>
         <rdfs:label xml:lang="es">Censo de Vehículos (edintveh)</rdfs:label>
         <rdfs:label xml:lang="en">Vehicle Census (edintveh)</rdfs:label>
-        <widoco:vocabularyIRI rdf:resource="https://edint.es/def/censovehiculos"/>
+        <widoco:vocabularyIRI rdf:resource="https://edint.es/def/censo-vehiculos"/>
     </rdf:Description>
     <rdf:Description>
         <foaf:name>Edna Ruckhaus</foaf:name>
