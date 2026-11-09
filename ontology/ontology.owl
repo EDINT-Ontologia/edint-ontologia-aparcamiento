@@ -34,19 +34,19 @@
         <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-03</dcterms:created>
         <dcterms:creator>
             <rdf:Description>
-                <foaf:name>Edna Ruckhaus</foaf:name>
-                <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
-            </rdf:Description>
-        </dcterms:creator>
-        <dcterms:creator>
-            <rdf:Description>
                 <foaf:name>Daniel Doña</foaf:name>
                 <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
             </rdf:Description>
         </dcterms:creator>
         <dcterms:creator>
             <rdf:Description>
-                <foaf:name>Socorro Bernardos</foaf:name>
+                <foaf:name>Edna Ruckhaus</foaf:name>
+                <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+            </rdf:Description>
+        </dcterms:creator>
+        <dcterms:creator>
+            <rdf:Description>
+                <foaf:name>Lucía Sánchez</foaf:name>
                 <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
             </rdf:Description>
         </dcterms:creator>
@@ -58,7 +58,7 @@
         </dcterms:creator>
         <dcterms:creator>
             <rdf:Description>
-                <foaf:name>Lucía Sánchez</foaf:name>
+                <foaf:name>Socorro Bernardos</foaf:name>
                 <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
             </rdf:Description>
         </dcterms:creator>
@@ -92,16 +92,9 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
         <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
         <widoco:vocabularyLabel>
             <rdf:Description>
-                <rdfs:label xml:lang="es">Censo de Vehículos (edintveh)</rdfs:label>
-                <rdfs:label xml:lang="en">Vehicle Census (edintveh)</rdfs:label>
-                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/censovehiculos"/>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
-                <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
-                <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
+                <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
+                <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
             </rdf:Description>
         </widoco:vocabularyLabel>
         <widoco:vocabularyLabel>
@@ -113,9 +106,16 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
         </widoco:vocabularyLabel>
         <widoco:vocabularyLabel>
             <rdf:Description>
-                <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
-                <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
-                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
+                <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
+                <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <rdfs:label xml:lang="es">Censo de Vehículos (edintveh)</rdfs:label>
+                <rdfs:label xml:lang="en">Vehicle Census (edintveh)</rdfs:label>
+                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/censo-vehiculos"/>
             </rdf:Description>
         </widoco:vocabularyLabel>
     </owl:Ontology>
@@ -467,6 +467,21 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     
 
 
+    <!-- https://edint.es/def/aparcamiento#parkingAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/aparcamiento#parkingAssociatedWith">
+        <rdfs:domain rdf:resource="https://edint.es/def/aparcamiento#OffStreetParking"/>
+        <rdfs:range rdf:resource="https://edint.es/def/infraestructura#Facility"/>
+        <rdfs:comment xml:lang="es">Relación entre un aparcamiento de la vía pública y el equipamiento al cual está vinculado. Por ejemplo, un aparcamiento puede estar vinvulado a un hospital.
+Es de interés los aparcamientos vinculados a estaciones de tren que permiten manejar la intermodalidad del transporte.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relationship between an off-street parking and the facility to which it is linked. For example, a parking might be linked to a hospital.
+Parking areas linked to train stations are of particular interest, as they facilitate intermodal transport.</rdfs:comment>
+        <rdfs:label xml:lang="es">aparcamiento vinculado con</rdfs:label>
+        <rdfs:label xml:lang="en">parking associated with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://edint.es/def/aparcamiento#providesPublicService -->
 
     <owl:ObjectProperty rdf:about="https://edint.es/def/aparcamiento#providesPublicService">
@@ -800,19 +815,11 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
         <foaf:name>Ontology Engineering Group, UPM</foaf:name>
     </owl:NamedIndividual>
     <rdf:Description>
-        <foaf:name>Edna Ruckhaus</foaf:name>
-        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
-    </rdf:Description>
-    <rdf:Description>
         <foaf:name>Daniel Doña</foaf:name>
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description>
-        <foaf:name>Socorro Bernardos</foaf:name>
-        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:name>Oscar Corcho</foaf:name>
+        <foaf:name>Edna Ruckhaus</foaf:name>
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description>
@@ -820,19 +827,12 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description>
-        <rdfs:label xml:lang="es">Censo de Vehículos (edintveh)</rdfs:label>
-        <rdfs:label xml:lang="en">Vehicle Census (edintveh)</rdfs:label>
-        <widoco:vocabularyIRI rdf:resource="https://edint.es/def/censovehiculos"/>
+        <foaf:name>Oscar Corcho</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description>
-        <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
-        <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
-        <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:label xml:lang="en">Regulated Zones (edintzone)</rdfs:label>
-        <rdfs:label xml:lang="es">Zonas Regulatorias (edintzone)</rdfs:label>
-        <widoco:vocabularyIRI rdf:resource="https://edint.es/def/zona-regulatoria"/>
+        <foaf:name>Socorro Bernardos</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description>
         <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
@@ -840,9 +840,69 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
         <widoco:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
     </rdf:Description>
     <rdf:Description>
+        <rdfs:label xml:lang="en">Regulated Zones (edintzone)</rdfs:label>
+        <rdfs:label xml:lang="es">Zonas Regulatorias (edintzone)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="https://edint.es/def/zona-regulatoria"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
+        <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="es">Censo de Vehículos (edintveh)</rdfs:label>
+        <rdfs:label xml:lang="en">Vehicle Census (edintveh)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="https://edint.es/def/censo-vehiculos"/>
+    </rdf:Description>
+    <rdf:Description>
         <foaf:homepage rdf:resource="https://www.femp.es/"/>
         <foaf:name>FEMP</foaf:name>
         <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">Regulated Zones (edintzone)</rdfs:label>
+        <rdfs:label xml:lang="es">Zonas Regulatorias (edintzone)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="https://edint.es/def/zona-regulatoria"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
+        <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="es">Censo de Vehículos (edintveh)</rdfs:label>
+        <rdfs:label xml:lang="en">Vehicle Census (edintveh)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="https://edint.es/def/censo-vehiculos"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Edna Ruckhaus</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Lucía Sánchez</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Oscar Corcho</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Socorro Bernardos</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Daniel Doña</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:homepage rdf:resource="https://www.femp.es/"/>
+        <foaf:name>FEMP</foaf:name>
+        <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
+        <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
+        <widoco:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
     </rdf:Description>
 </rdf:RDF>
 
