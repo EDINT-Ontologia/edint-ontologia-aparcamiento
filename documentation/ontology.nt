@@ -23,7 +23,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" .
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/description> "La ontología de Aparcamiento representa los aparcamientos en la vía pública y los que están fuera de la vía pública, los cuales a su vez pueden ser públicos o privados. \nLos aparcamientos son una intalación más de la infraestructura de la ciudad por lo cual  la ontología está relacionada con la ontología de Infraestructura. Además, se representan sus puntos de acceso para lo cual se enlaza a la representación de sensores de la infraestructura."@es .
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/description> "The Parking ontology represents on-street and off-street parking, which can be either public or private. Parking facilities are part of the city's infrastructure, and therefore this ontology is related to the Infrastructure ontology. Furthermore, their access points are represented, as a relationship to the infrastructure's sensor representation."@en .
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/issued> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> .
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/modified> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/publisher> _:genid6 .
 _:genid6 <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
@@ -32,7 +32,7 @@ _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/title> "EDINT Parking Ontology"@en .
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/title> "Ontología EDINT de Aparcamiento"@es .
 <https://edint.es/def/aparcamiento> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintapar" .
-<https://edint.es/def/aparcamiento> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://edint.es/def/aparcamiento#> .
+<https://edint.es/def/aparcamiento> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/aparcamiento#" .
 <https://edint.es/def/aparcamiento> <http://www.w3.org/2000/01/rdf-schema#label> "Aparcamiento"@es .
 <https://edint.es/def/aparcamiento> <http://www.w3.org/2000/01/rdf-schema#label> "Parking"@en .
 <https://edint.es/def/aparcamiento> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-aparcamiento/releases/tag/v0.2> .
@@ -49,7 +49,7 @@ _:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/o
 _:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@es .
 _:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@en .
 <https://edint.es/def/aparcamiento> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid8 .
-_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/censovehiculos> .
+_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/censo-vehiculos> .
 _:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle Census (edintveh)"@en .
 _:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "Censo de Vehículos (edintveh)"@es .
 <https://edint.es/def/aparcamiento> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid9 .
@@ -271,10 +271,10 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://edint.es/def/aparcamiento#providesPublicService> <http://www.w3.org/2000/01/rdf-schema#label> "presta servicio público"@es .
 <https://edint.es/def/aparcamiento#providesPublicService> <http://www.w3.org/2000/01/rdf-schema#label> "provides public service"@en .
 # 
-# https://edint.es/def/censovehiculos#permitType
-<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> .
-<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid15 .
+# https://edint.es/def/censo-vehiculos#permitType
+<https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> .
+<https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid15 .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid15 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid18 .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
@@ -286,14 +286,14 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre el Grupo de plazas por tipo de permiso y la taxonomía de tipos de permiso."@es .
-<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the group of places by type of permit and the taxonomy of types of permit."@en .
-<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#label> "permit type"@en .
-<https://edint.es/def/censovehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de permiso"@es .
+<https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre el Grupo de plazas por tipo de permiso y la taxonomía de tipos de permiso."@es .
+<https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the group of places by type of permit and the taxonomy of types of permit."@en .
+<https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#label> "permit type"@en .
+<https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de permiso"@es .
 # 
-# https://edint.es/def/censovehiculos#vehicleType
-<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid19 .
+# https://edint.es/def/censo-vehiculos#vehicleType
+<https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid19 .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid19 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid22 .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
@@ -305,10 +305,10 @@ _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de vehículo (por ejemplo, turismo, furgoneta, caravana, etc.)"@en .
-<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of vehicle. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., van, truck, caravan, etc.)."@es .
-<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de vehiculo"@es .
-<https://edint.es/def/censovehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "vehicle type"@en .
+<https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de vehículo (por ejemplo, turismo, furgoneta, caravana, etc.)"@en .
+<https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of vehicle. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., van, truck, caravan, etc.)."@es .
+<https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de vehiculo"@es .
+<https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "vehicle type"@en .
 # 
 # https://edint.es/def/infraestructura#hasObservationPoint
 <https://edint.es/def/infraestructura#hasObservationPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

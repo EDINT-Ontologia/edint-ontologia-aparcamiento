@@ -31,13 +31,13 @@
 Los aparcamientos son una intalación más de la infraestructura de la ciudad por lo cual  la ontología está relacionada con la ontología de Infraestructura. Además, se representan sus puntos de acceso para lo cual se enlaza a la representación de sensores de la infraestructura.</terms:description>
         <terms:description xml:lang="en">The Parking ontology represents on-street and off-street parking, which can be either public or private. Parking facilities are part of the city&apos;s infrastructure, and therefore this ontology is related to the Infrastructure ontology. Furthermore, their access points are represented, as a relationship to the infrastructure&apos;s sensor representation.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</terms:issued>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</terms:modified>
         <terms:publisher rdf:nodeID="genid6"/>
         <terms:title xml:lang="en">EDINT Parking Ontology</terms:title>
         <terms:title xml:lang="es">Ontología EDINT de Aparcamiento</terms:title>
         <vann:preferredNamespacePrefix>edintapar</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/aparcamiento#"/>
+        <vann:preferredNamespaceUri>https://edint.es/def/aparcamiento#</vann:preferredNamespaceUri>
         <rdfs:label xml:lang="es">Aparcamiento</rdfs:label>
         <rdfs:label xml:lang="en">Parking</rdfs:label>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-aparcamiento/releases/tag/v0.2"/>
@@ -87,7 +87,7 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     <rdf:Description rdf:nodeID="genid8">
         <rdfs:label xml:lang="es">Censo de Vehículos (edintveh)</rdfs:label>
         <rdfs:label xml:lang="en">Vehicle Census (edintveh)</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="https://edint.es/def/censovehiculos"/>
+        <vocab:vocabularyIRI rdf:resource="https://edint.es/def/censo-vehiculos"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid9">
         <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
@@ -502,10 +502,10 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     
 
 
-    <!-- https://edint.es/def/censovehiculos#permitType -->
+    <!-- https://edint.es/def/censo-vehiculos#permitType -->
 
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#permitType">
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censo-vehiculos#permitType">
         <rdfs:domain rdf:resource="https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType"/>
         <rdfs:range>
             <owl:Class>
@@ -526,10 +526,10 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
     
 
 
-    <!-- https://edint.es/def/censovehiculos#vehicleType -->
+    <!-- https://edint.es/def/censo-vehiculos#vehicleType -->
 
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/censovehiculos#vehicleType">
+    <owl:ObjectProperty rdf:about="https://edint.es/def/censo-vehiculos#vehicleType">
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
