@@ -1,7 +1,7 @@
 <h2 id="desc" class="list">Parking: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
 <p>Figure 1 shows the conceptual model of the ontology with its classes and relationships (object properties).</p>
-<p><center><img src="images/diagrama-conceptual.png"/><figcaption>
+<p><center><img src="images/diagrama-conceptual-with-DP.png"/><figcaption>
 Figura 1. Conceptual model</figcaption></center></p>
 A <a href="#Parking">parking lot</a> is a place where vehicles can be temporarily parked by paying the <a href="#ParkingFee">fee</a> that <a href="#hasParkingFee">has</a> charges.
 
@@ -10,6 +10,8 @@ Parking lots are a (sub)class of <a href="#https://edint.es/def/infraestructura#
 There are two (sub)classes of parking: those that are <a href="#OnStreetParking">on-street parking</a> and those that are <a href="#OffStreetParking">off-street parking</a>. On-street parking can be <a href="#isPartOfZone">part of a</a> <a href="#https://edint.es/def/zona-regulatoria#RegulatedParkingZone">regulated parking zone</a>, which is a (sub)class of <a href="#https://edint.es/def/zona-regulatoria#RegulatedZone">regulated zone</a>.
 
 All parking areas have parking spaces that can be grouped according to the type of permit; for example, there are groups of spaces for residents, people with reduced mobility, etc. They are also grouped by the type of vehicle, for example, spaces for cars, for motorcycles, etc. These two taxonomies have been defined in the Ontology for the representation of the census or register of vehicles.
+
+<p>Parking facilities may also <a href="#hasParkingZone">contain</a> one or more <a href="#ParkingZone">zones</a>, which are spatial groupings of parking spaces. The spatial characteristics of a zone are defined using the <a href="https://www.ogc.org/standards/geosparql/">GeoSPARQL language</a> (a parking zone is a subclass of <a href="#http://www.opengis.net/ont/geosparql#Feature">gsp:Feature</a>); for example, "Zone A" might be located on Level 1 of a parking facility. In this way, a group of parking spaces—defined according to a specific criterion—<a href="#locatedInParkingZone">are situated</a> within a particular zone of the parking facility. For instance, parking spaces for people with reduced mobility are located in Zone A of the parking facility.</p>
 
 <pre><textarea style="resize:none" readonly id="code2" name="code" rows="25" cols="100">
 @prefix comp: &lt;http://semweb.mmlab.be/ns/rml-compression#&gt; .
