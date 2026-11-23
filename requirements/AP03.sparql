@@ -46,7 +46,7 @@ ORDER BY ?parking ?vehicleTypeLabel
 
 # Y por tipo de vehículo
 
-PREFIX esintinfp: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructurapublica#>
+PREFIX edintapar: <https://edint.es/def/aparcamiento#>
 PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
 PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -55,16 +55,16 @@ SELECT ?parking ?parkingLabel
        (GROUP_CONCAT(DISTINCT ?groupLabel; SEPARATOR=", ") AS ?grupos)	# Agrupados por tipo de vehículo
        (SUM(?numPlazas) AS ?totalPlazas)
 WHERE {
-  ?parking a esintinfp:Parking ;		# Para todos los aparcamientos
-           esintinfp:hasSpotsByVehicleType ?group .
+  ?parking a edintapar:Parking ;		# Para todos los aparcamientos
+           edintapar:hasSpotsByVehicleType ?group .
 
   OPTIONAL { ?parking rdfs:label ?parkingLabel }
   OPTIONAL { ?group rdfs:label ?groupLabel }
 
-  ?group esintinfp:hasVehicleTypeForSpots ?vehicleType .
+  ?group edintveh:vehicleType ?vehicleType .
   OPTIONAL { ?vehicleType skos:prefLabel ?vehicleTypeLabel }
 
-  OPTIONAL { ?group esintinfp:numberOfSpots ?numPlazas }
+  OPTIONAL { ?group edintapar:numberOfParkingSpots ?numPlazas }
 }
 GROUP BY ?parking ?parkingLabel ?vehicleType ?vehicleTypeLabel
 ORDER BY ?parkingLabel ?vehicleTypeLabel
