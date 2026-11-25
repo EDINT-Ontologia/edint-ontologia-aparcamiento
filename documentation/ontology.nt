@@ -7,19 +7,19 @@
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/created> "2026-03-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/creator> _:genid1 .
 _:genid1 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-_:genid1 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/creator> _:genid2 .
 _:genid2 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-_:genid2 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/creator> _:genid3 .
 _:genid3 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-_:genid3 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" .
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/creator> _:genid4 .
 _:genid4 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 _:genid4 <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" .
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/creator> _:genid5 .
 _:genid5 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-_:genid5 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" .
+_:genid5 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/description> "La ontología de Aparcamiento representa los aparcamientos en la vía pública y los que están fuera de la vía pública, los cuales a su vez pueden ser públicos o privados. \nLos aparcamientos son una intalación más de la infraestructura de la ciudad por lo cual  la ontología está relacionada con la ontología de Infraestructura. Además, se representan sus puntos de acceso para lo cual se enlaza a la representación de sensores de la infraestructura."@es .
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/description> "The Parking ontology represents on-street and off-street parking, which can be either public or private. Parking facilities are part of the city's infrastructure, and therefore this ontology is related to the Infrastructure ontology. Furthermore, their access points are represented, as a relationship to the infrastructure's sensor representation."@en .
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/issued> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -33,8 +33,6 @@ _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
 <https://edint.es/def/aparcamiento> <http://purl.org/dc/terms/title> "Ontología EDINT de Aparcamiento"@es .
 <https://edint.es/def/aparcamiento> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintapar" .
 <https://edint.es/def/aparcamiento> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/aparcamiento#" .
-<https://edint.es/def/aparcamiento> <http://www.w3.org/2000/01/rdf-schema#label> "Aparcamiento"@es .
-<https://edint.es/def/aparcamiento> <http://www.w3.org/2000/01/rdf-schema#label> "Parking"@en .
 <https://edint.es/def/aparcamiento> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-aparcamiento/releases/tag/v0.2> .
 <https://edint.es/def/aparcamiento> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.1" .
 <https://edint.es/def/aparcamiento> <https://schema.org/codeRepository> <https://github.com/EDINT-Ontologia/edint-ontologia-aparcamiento> .
@@ -180,6 +178,9 @@ _:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "Regulated Zones (edintzo
 # #################################################################
 # 
 # 
+# http://www.opengis.net/ont/geosparql#wktLiteral
+<http://www.opengis.net/ont/geosparql#wktLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
 # http://www.w3.org/2001/XMLSchema#date
 <http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
@@ -194,6 +195,18 @@ _:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "Regulated Zones (edintzo
 # #
 # #################################################################
 # 
+# 
+# http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#Feature> .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/ont/geosparql#Geometry> .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#comment> "Una representación espacial de un \"feature\" determinado."@es .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0> .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "has geometry"@en .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "tiene geometría"@es .
+# 
+# http://www.opengis.net/ont/geosparql#sfContains
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -210,22 +223,34 @@ _:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "Regulated Zones (edintzo
 # https://edint.es/def/aparcamiento#hasParkingSpot
 <https://edint.es/def/aparcamiento#hasParkingSpot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://edint.es/def/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid11 .
-_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingZone> .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingSpotsByPermitType> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#Parking> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingSpotsByPermitType> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#Parking> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://edint.es/def/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/aparcamiento#ParkingSpot> .
 <https://edint.es/def/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre el aparcamiento o el grupo de plazas de un aparcamiento y las plazas específicas que contiene."@es .
 <https://edint.es/def/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between  the parking or a group of parking spots and the specific spots it contains."@en .
 <https://edint.es/def/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#label> "has parking spot"@en .
 <https://edint.es/def/aparcamiento#hasParkingSpot> <http://www.w3.org/2000/01/rdf-schema#label> "tiene plaza de aparcamiento"@es .
+# 
+# https://edint.es/def/aparcamiento#hasParkingZone
+<https://edint.es/def/aparcamiento#hasParkingZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/aparcamiento#hasParkingZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/aparcamiento#Parking> .
+<https://edint.es/def/aparcamiento#hasParkingZone> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/aparcamiento#ParkingZone> .
+<https://edint.es/def/aparcamiento#hasParkingZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre un Aparcamiento y las zonas espaciales que contiene."@es .
+<https://edint.es/def/aparcamiento#hasParkingZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a parking and the spatial zones that it contains."@en .
+<https://edint.es/def/aparcamiento#hasParkingZone> <http://www.w3.org/2000/01/rdf-schema#label> "has parking zone"@en .
+<https://edint.es/def/aparcamiento#hasParkingZone> <http://www.w3.org/2000/01/rdf-schema#label> "tiene zona de aparcamiento"@es .
 # 
 # https://edint.es/def/aparcamiento#hasSensor
 <https://edint.es/def/aparcamiento#hasSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -257,11 +282,49 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/aparcamiento#OnStreetParking> .
-<https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/zona-regulatoria#RegulatedParkingZone> .
+<https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#range> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid16 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/RegulatedZoneType/RegulatedParkingZone> .
+<https://edint.es/kos/RegulatedZoneType/RegulatedParkingZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://edint.es/def/zona-regulatoria/hasRegulatedZoneType> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/zona-regulatoria#RegulatedZone> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre un grupo de plazas de aparcamiento en la vía pública y la zona de estacionamiento regulado a la cual pertenecen."@es .
 <https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a group of parking spaces on a street and the regulated parking zone to which they belong."@en .
 <https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#label> "es parte de zona"@es .
 <https://edint.es/def/aparcamiento#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#label> "is part of zone"@en .
+# 
+# https://edint.es/def/aparcamiento#locatedInParkingZone
+<https://edint.es/def/aparcamiento#locatedInParkingZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/aparcamiento#locatedInParkingZone> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#unionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingSpotsByPermitType> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/aparcamiento#locatedInParkingZone> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/aparcamiento#ParkingZone> .
+<https://edint.es/def/aparcamiento#locatedInParkingZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre un grupo de plazas agrupada por tipo de vehículo o por tipo de permiso y la zona donde está ubicado el grupo."@es .
+<https://edint.es/def/aparcamiento#locatedInParkingZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a group of parking spaces—categorized by vehicle type or permit type—and the zone where that group is located."@en .
+<https://edint.es/def/aparcamiento#locatedInParkingZone> <http://www.w3.org/2000/01/rdf-schema#label> "located in parking zone"@en .
+<https://edint.es/def/aparcamiento#locatedInParkingZone> <http://www.w3.org/2000/01/rdf-schema#label> "situado en zona de aparcamiento"@es .
+# 
+# https://edint.es/def/aparcamiento#parkingAssociatedWith
+<https://edint.es/def/aparcamiento#parkingAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/aparcamiento#parkingAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/aparcamiento#OffStreetParking> .
+<https://edint.es/def/aparcamiento#parkingAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <https://edint.es/def/infraestructura#Facility> .
+<https://edint.es/def/aparcamiento#parkingAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre un aparcamiento de la vía pública y el equipamiento al cual está vinculado. Por ejemplo, un aparcamiento puede estar vinvulado a un hospital.\nEs de interés los aparcamientos vinculados a estaciones de tren que permiten manejar la intermodalidad del transporte."@es .
+<https://edint.es/def/aparcamiento#parkingAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an off-street parking and the facility to which it is linked. For example, a parking might be linked to a hospital.\nParking areas linked to train stations are of particular interest, as they facilitate intermodal transport."@en .
+<https://edint.es/def/aparcamiento#parkingAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "aparcamiento vinculado con"@es .
+<https://edint.es/def/aparcamiento#parkingAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "parking associated with"@en .
 # 
 # https://edint.es/def/aparcamiento#providesPublicService
 <https://edint.es/def/aparcamiento#providesPublicService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -274,18 +337,18 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://edint.es/def/censo-vehiculos#permitType
 <https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> .
-<https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid15 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
-_:genid17 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehiclePermitType> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehiclePermitType> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre el Grupo de plazas por tipo de permiso y la taxonomía de tipos de permiso."@es .
 <https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the group of places by type of permit and the taxonomy of types of permit."@en .
 <https://edint.es/def/censo-vehiculos#permitType> <http://www.w3.org/2000/01/rdf-schema#label> "permit type"@en .
@@ -293,18 +356,18 @@ _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # 
 # https://edint.es/def/censo-vehiculos#vehicleType
 <https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid19 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
-_:genid21 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehicleType> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid27 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/VehicleType> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de vehículo. Los valores son conceptos SKOS que pertenecen a una lista controlada de tipos de vehículo (por ejemplo, turismo, furgoneta, caravana, etc.)"@en .
 <https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of vehicle. The range is a SKOS concept that belongs to a controlled list of permit types (e.g., van, truck, caravan, etc.)."@es .
 <https://edint.es/def/censo-vehiculos#vehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de vehiculo"@es .
@@ -318,6 +381,26 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <https://edint.es/def/infraestructura#hasObservationPoint> <http://www.w3.org/2000/01/rdf-schema#label> "has observation point"@en .
 <https://edint.es/def/infraestructura#hasObservationPoint> <http://www.w3.org/2000/01/rdf-schema#label> "tiene punto de observación"@es .
 # 
+# https://edint.es/def/zona-regulatoria/hasRegulatedZoneType
+<https://edint.es/def/zona-regulatoria/hasRegulatedZoneType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://edint.es/def/zona-regulatoria/hasRegulatedZoneType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/zona-regulatoria#RegulatedZone> .
+<https://edint.es/def/zona-regulatoria/hasRegulatedZoneType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid31 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/def/zona-regulatoria#RegulatedZoneType> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://edint.es/def/zona-regulatoria/hasRegulatedZoneType> <http://www.w3.org/2000/01/rdf-schema#comment> "Vincula una zona regulada a su clasificación de tipo del esquema de conceptos SKOS RegulatedZoneType."@es .
+<https://edint.es/def/zona-regulatoria/hasRegulatedZoneType> <http://www.w3.org/2000/01/rdf-schema#comment> "inks a regulated zone to its type classification from the RegulatedZoneType SKOS concept scheme."@en .
+<https://edint.es/def/zona-regulatoria/hasRegulatedZoneType> <http://www.w3.org/2000/01/rdf-schema#label> "has regulated zone type"@en .
+<https://edint.es/def/zona-regulatoria/hasRegulatedZoneType> <http://www.w3.org/2000/01/rdf-schema#label> "tiene tipo de zona regulada"@es .
+# 
 # 
 # 
 # #################################################################
@@ -327,20 +410,63 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # #################################################################
 # 
 # 
+# https://edint.es/def/aparcamiento#asWKT
+<https://edint.es/def/aparcamiento#asWKT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://edint.es/def/aparcamiento#asWKT> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://edint.es/def/aparcamiento#asWKT> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://edint.es/def/aparcamiento#asWKT> <http://www.w3.org/2000/01/rdf-schema#comment> "A Well-known Text serialization of a Geometry object."@en .
+<https://edint.es/def/aparcamiento#asWKT> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0> .
+<https://edint.es/def/aparcamiento#asWKT> <http://www.w3.org/2000/01/rdf-schema#label> "as WKT"@en .
+# 
+# https://edint.es/def/aparcamiento#locationInParking
+<https://edint.es/def/aparcamiento#locationInParking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://edint.es/def/aparcamiento#locationInParking> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/aparcamiento#ParkingZone> .
+<https://edint.es/def/aparcamiento#locationInParking> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://edint.es/def/aparcamiento#locationInParking> <http://www.w3.org/2000/01/rdf-schema#comment> "Ubicación de la zona dentro del aparcamiento, por ejemplo \"Planta 1\"."@es .
+<https://edint.es/def/aparcamiento#locationInParking> <http://www.w3.org/2000/01/rdf-schema#label> "Location of the parking zone within the parking facility, for example \"Level 1\"."@en .
+<https://edint.es/def/aparcamiento#locationInParking> <http://www.w3.org/2000/01/rdf-schema#label> "location in parking"@en .
+<https://edint.es/def/aparcamiento#locationInParking> <http://www.w3.org/2000/01/rdf-schema#label> "ubicación dentro del aparcamiento"@es .
+# 
+# https://edint.es/def/aparcamiento#numberOfOccupiedSpots
+<https://edint.es/def/aparcamiento#numberOfOccupiedSpots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://edint.es/def/aparcamiento#numberOfOccupiedSpots> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#unionOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingZone> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingSpotsByPermitType> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#Parking> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/aparcamiento#numberOfOccupiedSpots> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://edint.es/def/aparcamiento#numberOfOccupiedSpots> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa el número de plazas que están ocupadas actualmente por vehículos. Este número puede obtenerse con diferentes tipos de sistemas, por ejemplo, conteo por flujo (entradas y salidas) o mediante sensores de detección individual por plaza."@es .
+<https://edint.es/def/aparcamiento#numberOfOccupiedSpots> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the number of parking spaces currently occupied by vehicles. This figure can be obtained using various types of systems—for example, by tracking traffic flow (entries and exits) or through individual (in each parking spot) space-detection sensors."@en .
+<https://edint.es/def/aparcamiento#numberOfOccupiedSpots> <http://www.w3.org/2000/01/rdf-schema#label> "number of occupied spots"@en .
+<https://edint.es/def/aparcamiento#numberOfOccupiedSpots> <http://www.w3.org/2000/01/rdf-schema#label> "número de plazas ocupadas"@es .
+# 
 # https://edint.es/def/aparcamiento#numberOfParkingSpots
 <https://edint.es/def/aparcamiento#numberOfParkingSpots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://edint.es/def/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid23 .
-_:genid23 <http://www.w3.org/2002/07/owl#unionOf> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingSpotsByPermitType> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#Parking> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#unionOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingZone> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#ParkingSpotsByPermitType> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://edint.es/def/aparcamiento#Parking> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://edint.es/def/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://edint.es/def/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of parking spots. Can be used to represent the total number of spots, or the  number of spots by vehicle type or by permit type. For example, 50 spots for cars, 10 for motorcycles."@en .
 <https://edint.es/def/aparcamiento#numberOfParkingSpots> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de plazas de aparcamiento. Se puede usar para representar el número total de plazas, o el número de plazas por tipo de vehículo o por tipo de permiso. Por ejemplo, 50 plazas para coches y 10 para motos."@es .
@@ -358,18 +484,33 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.opengis.net/ont/geosparql#Feature
 <http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#SpatialObject> .
 <http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta clase representa el tipo \"feature\" de nivel superior. Es equivalente a GFI_Feature, definida en la norma ISO 19156:2011, y es la superclase de todos los tipos de \"feature\"."@es .
 <http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0> .
 <http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature"@en .
 # 
-# http://www.opengis.net/ont/sf#Point
-<http://www.opengis.net/ont/sf#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "La clase representa el tipo de geometría de nivel superior. Esta clase es equivalente a la clase UML GM_Object definida en la norma ISO 19107 y es la superclase de todos los tipos de geometría."@es .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0> .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Geometría"@es .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometry"@en .
+# 
+# http://www.opengis.net/ont/geosparql#SpatialObject
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Anything spatial (being or having a shape, position or an extent)."@en .
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0> .
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial Object"@en .
 # 
 # http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/2004/02/skos/core#ConceptScheme
 <http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://edint.es/def/aparcamiento#OffStreetParking
 <https://edint.es/def/aparcamiento#OffStreetParking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -423,6 +564,14 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "Group of parking spots by vehicle type"@en .
 <https://edint.es/def/aparcamiento#ParkingSpotsByVehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "Grupo de plazas por tipo de vehículo"@es .
 # 
+# https://edint.es/def/aparcamiento#ParkingZone
+<https://edint.es/def/aparcamiento#ParkingZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://edint.es/def/aparcamiento#ParkingZone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://edint.es/def/aparcamiento#ParkingZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Agrupaciones espaciales de plazas que contienen datos tales como su geometría (polígono), referencias a sus plazas y atributos relacionados con su ubicación dentro del aparcamiento, capacidad y ocupación."@es .
+<https://edint.es/def/aparcamiento#ParkingZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Spatial groupings of parking spots that contain data such as their geometry (polygon), references to the individual spots, and attributes related to their location within the parking facility, as well as their capacity and occupancy."@en .
+<https://edint.es/def/aparcamiento#ParkingZone> <http://www.w3.org/2000/01/rdf-schema#label> "Parking zone"@en .
+<https://edint.es/def/aparcamiento#ParkingZone> <http://www.w3.org/2000/01/rdf-schema#label> "Zona de estacionamiento"@es .
+# 
 # https://edint.es/def/infraestructura#Facility
 <https://edint.es/def/infraestructura#Facility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://edint.es/def/infraestructura#Facility> <http://www.w3.org/2000/01/rdf-schema#comment> "Equipamientos a los que un ciudadano puede acudir pertenecientes a una organización pública o privadal. Un equipamiento puede ser un aparcamiento, un centro educativo, una estación de bicicleta compartida y cualquier instalación que sea un centro de salud, centro educativo, centro social, comisaría, entre otros."@es .
@@ -437,14 +586,6 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://edint.es/def/infraestructura#ObservationPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Puntos en donde se pueden realizar observaciones de acceso o de conteo a través de sensores."@es .
 <https://edint.es/def/infraestructura#ObservationPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Observation point"@en .
 <https://edint.es/def/infraestructura#ObservationPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Punto de observación"@es .
-# 
-# https://edint.es/def/zona-regulatoria#RegulatedParkingZone
-<https://edint.es/def/zona-regulatoria#RegulatedParkingZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://edint.es/def/zona-regulatoria#RegulatedParkingZone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://edint.es/def/zona-regulatoria#RegulatedZone> .
-<https://edint.es/def/zona-regulatoria#RegulatedParkingZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Public road zone where parking is subject to time regulation, fee payment, or other restrictions."@en .
-<https://edint.es/def/zona-regulatoria#RegulatedParkingZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Zona de la vía pública donde el estacionamiento está sujeto a regulación horaria, pago de tasas u otras restricciones."@es .
-<https://edint.es/def/zona-regulatoria#RegulatedParkingZone> <http://www.w3.org/2000/01/rdf-schema#label> "Regulated parking zone"@en .
-<https://edint.es/def/zona-regulatoria#RegulatedParkingZone> <http://www.w3.org/2000/01/rdf-schema#label> "Zona de estacionamiento regulado"@es .
 # 
 # https://edint.es/def/zona-regulatoria#RegulatedZone
 <https://edint.es/def/zona-regulatoria#RegulatedZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -462,11 +603,18 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
+# https://edint.es/def/zona-regulatoria#RegulatedZoneType
+<https://edint.es/def/zona-regulatoria#RegulatedZoneType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://edint.es/def/zona-regulatoria#RegulatedZoneType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
 # https://edint.es/kos/VehiclePermitType
 <https://edint.es/kos/VehiclePermitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://edint.es/kos/VehiclePermitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
 # https://edint.es/kos/VehicleType
 <https://edint.es/kos/VehicleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://edint.es/kos/RegulatedZoneType/RegulatedParkingZone
 # 
 # 
 # 

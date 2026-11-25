@@ -29,8 +29,6 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
                                                                       "Ontología EDINT de Aparcamiento"@es ;
                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintapar" ;
                                      <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/aparcamiento#" ;
-                                     rdfs:label "Aparcamiento"@es ,
-                                                "Parking"@en ;
                                      owl:priorVersion <https://github.com/EDINT-Ontologia/edint-ontologia-aparcamiento/releases/tag/v0.2> ;
                                      owl:versionInfo "0.2.1" ;
                                      <https://schema.org/codeRepository> <https://github.com/EDINT-Ontologia/edint-ontologia-aparcamiento> ;
@@ -45,19 +43,19 @@ Los aparcamientos son una intalación más de la infraestructura de la ciudad po
                                                                                      _:genid9 ,
                                                                                      _:genid10 .
 
-_:genid1 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" ;
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid2 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" ;
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid3 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" ;
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
 _:genid4 <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid5 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" ;
+_:genid5 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
 _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> ;
@@ -224,6 +222,10 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 #    Datatypes
 #################################################################
 
+###  http://www.opengis.net/ont/geosparql#wktLiteral
+<http://www.opengis.net/ont/geosparql#wktLiteral> rdf:type rdfs:Datatype .
+
+
 ###  http://www.w3.org/2001/XMLSchema#date
 xsd:date rdf:type rdfs:Datatype .
 
@@ -235,6 +237,20 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 #    Object Properties
 #################################################################
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <http://www.opengis.net/ont/geosparql#Feature> ;
+                                                   rdfs:range <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                   rdfs:comment "Una representación espacial de un \"feature\" determinado."@es ;
+                                                   rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                   rdfs:label "has geometry"@en ,
+                                                              "tiene geometría"@es .
+
+
+###  http://www.opengis.net/ont/geosparql#sfContains
+<http://www.opengis.net/ont/geosparql#sfContains> rdf:type owl:ObjectProperty .
+
 
 ###  http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
@@ -256,6 +272,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                               owl:unionOf ( :Parking
                                             :ParkingSpotsByPermitType
                                             :ParkingSpotsByVehicleType
+                                            :ParkingZone
                                           )
                             ] ;
                 rdfs:range :ParkingSpot ;
@@ -263,6 +280,16 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                              "Relationship between  the parking or a group of parking spots and the specific spots it contains."@en ;
                 rdfs:label "has parking spot"@en ,
                            "tiene plaza de aparcamiento"@es .
+
+
+###  https://edint.es/def/aparcamiento#hasParkingZone
+:hasParkingZone rdf:type owl:ObjectProperty ;
+                rdfs:domain :Parking ;
+                rdfs:range :ParkingZone ;
+                rdfs:comment "Relación entre un Aparcamiento y las zonas espaciales que contiene."@es ,
+                             "Relationship between a parking and the spatial zones that it contains."@en ;
+                rdfs:label "has parking zone"@en ,
+                           "tiene zona de aparcamiento"@es .
 
 
 ###  https://edint.es/def/aparcamiento#hasSensor
@@ -298,11 +325,44 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :isPartOfZone rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf owl:topObjectProperty ;
               rdfs:domain :OnStreetParking ;
-              rdfs:range <https://edint.es/def/zona-regulatoria#RegulatedParkingZone> ;
+              rdfs:range [ owl:intersectionOf ( <https://edint.es/def/zona-regulatoria#RegulatedZone>
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <https://edint.es/def/zona-regulatoria/hasRegulatedZoneType> ;
+                                                  owl:hasValue <https://edint.es/kos/RegulatedZoneType/RegulatedParkingZone>
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ;
               rdfs:comment "Relación entre un grupo de plazas de aparcamiento en la vía pública y la zona de estacionamiento regulado a la cual pertenecen."@es ,
                            "Relationship between a group of parking spaces on a street and the regulated parking zone to which they belong."@en ;
               rdfs:label "es parte de zona"@es ,
                          "is part of zone"@en .
+
+
+###  https://edint.es/def/aparcamiento#locatedInParkingZone
+:locatedInParkingZone rdf:type owl:ObjectProperty ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( :ParkingSpotsByPermitType
+                                                  :ParkingSpotsByVehicleType
+                                                )
+                                  ] ;
+                      rdfs:range :ParkingZone ;
+                      rdfs:comment "Relación entre un grupo de plazas agrupada por tipo de vehículo o por tipo de permiso y la zona donde está ubicado el grupo."@es ,
+                                   "Relationship between a group of parking spaces—categorized by vehicle type or permit type—and the zone where that group is located."@en ;
+                      rdfs:label "located in parking zone"@en ,
+                                 "situado en zona de aparcamiento"@es .
+
+
+###  https://edint.es/def/aparcamiento#parkingAssociatedWith
+:parkingAssociatedWith rdf:type owl:ObjectProperty ;
+                       rdfs:domain :OffStreetParking ;
+                       rdfs:range <https://edint.es/def/infraestructura#Facility> ;
+                       rdfs:comment """Relación entre un aparcamiento de la vía pública y el equipamiento al cual está vinculado. Por ejemplo, un aparcamiento puede estar vinvulado a un hospital.
+Es de interés los aparcamientos vinculados a estaciones de tren que permiten manejar la intermodalidad del transporte."""@es ,
+                                    """The relationship between an off-street parking and the facility to which it is linked. For example, a parking might be linked to a hospital.
+Parking areas linked to train stations are of particular interest, as they facilitate intermodal transport."""@en ;
+                       rdfs:label "aparcamiento vinculado con"@es ,
+                                  "parking associated with"@en .
 
 
 ###  https://edint.es/def/aparcamiento#providesPublicService
@@ -356,9 +416,61 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                                       "tiene punto de observación"@es .
 
 
+###  https://edint.es/def/zona-regulatoria/hasRegulatedZoneType
+<https://edint.es/def/zona-regulatoria/hasRegulatedZoneType> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <https://edint.es/def/zona-regulatoria#RegulatedZone> ;
+                                                             rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                                                 owl:hasValue <https://edint.es/def/zona-regulatoria#RegulatedZoneType>
+                                                                                               ]
+                                                                                             ) ;
+                                                                          rdf:type owl:Class
+                                                                        ] ;
+                                                             rdfs:comment "Vincula una zona regulada a su clasificación de tipo del esquema de conceptos SKOS RegulatedZoneType."@es ,
+                                                                          "inks a regulated zone to its type classification from the RegulatedZoneType SKOS concept scheme."@en ;
+                                                             rdfs:label "has regulated zone type"@en ,
+                                                                        "tiene tipo de zona regulada"@es .
+
+
 #################################################################
 #    Data properties
 #################################################################
+
+###  https://edint.es/def/aparcamiento#asWKT
+:asWKT rdf:type owl:DatatypeProperty ;
+       rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> ;
+       rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral> ;
+       rdfs:comment "A Well-known Text serialization of a Geometry object."@en ;
+       rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0> ;
+       rdfs:label "as WKT"@en .
+
+
+###  https://edint.es/def/aparcamiento#locationInParking
+:locationInParking rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :ParkingZone ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Ubicación de la zona dentro del aparcamiento, por ejemplo \"Planta 1\"."@es ;
+                   rdfs:label "Location of the parking zone within the parking facility, for example \"Level 1\"."@en ,
+                              "location in parking"@en ,
+                              "ubicación dentro del aparcamiento"@es .
+
+
+###  https://edint.es/def/aparcamiento#numberOfOccupiedSpots
+:numberOfOccupiedSpots rdf:type owl:DatatypeProperty ;
+                       rdfs:domain [ rdf:type owl:Class ;
+                                     owl:unionOf ( :Parking
+                                                   :ParkingSpotsByPermitType
+                                                   :ParkingSpotsByVehicleType
+                                                   :ParkingZone
+                                                 )
+                                   ] ;
+                       rdfs:range xsd:integer ;
+                       rdfs:comment "Representa el número de plazas que están ocupadas actualmente por vehículos. Este número puede obtenerse con diferentes tipos de sistemas, por ejemplo, conteo por flujo (entradas y salidas) o mediante sensores de detección individual por plaza."@es ,
+                                    "Represents the number of parking spaces currently occupied by vehicles. This figure can be obtained using various types of systems—for example, by tracking traffic flow (entries and exits) or through individual (in each parking spot) space-detection sensors."@en ;
+                       rdfs:label "number of occupied spots"@en ,
+                                  "número de plazas ocupadas"@es .
+
 
 ###  https://edint.es/def/aparcamiento#numberOfParkingSpots
 :numberOfParkingSpots rdf:type owl:DatatypeProperty ;
@@ -366,6 +478,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                     owl:unionOf ( :Parking
                                                   :ParkingSpotsByPermitType
                                                   :ParkingSpotsByVehicleType
+                                                  :ParkingZone
                                                 )
                                   ] ;
                       rdfs:range xsd:integer ;
@@ -381,13 +494,26 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.opengis.net/ont/geosparql#Feature
 <http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
                                                rdfs:comment "Esta clase representa el tipo \"feature\" de nivel superior. Es equivalente a GFI_Feature, definida en la norma ISO 19156:2011, y es la superclase de todos los tipos de \"feature\"."@es ;
                                                rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0> ;
                                                rdfs:label "Feature"@en .
 
 
-###  http://www.opengis.net/ont/sf#Point
-<http://www.opengis.net/ont/sf#Point> rdf:type owl:Class .
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                rdfs:comment "La clase representa el tipo de geometría de nivel superior. Esta clase es equivalente a la clase UML GM_Object definida en la norma ISO 19107 y es la superclase de todos los tipos de geometría."@es ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0> ,
+                                                                 "Geometría"@es ;
+                                                rdfs:label "Geometry"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#SpatialObject
+<http://www.opengis.net/ont/geosparql#SpatialObject> rdf:type owl:Class ;
+                                                     rdfs:comment "Anything spatial (being or having a shape, position or an extent)."@en ;
+                                                     rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                     rdfs:label "Spatial Object"@en .
 
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
@@ -396,6 +522,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2004/02/skos/core#ConceptScheme
 <http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class .
 
 
 ###  https://edint.es/def/aparcamiento#OffStreetParking
@@ -457,6 +587,15 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                       "Grupo de plazas por tipo de vehículo"@es .
 
 
+###  https://edint.es/def/aparcamiento#ParkingZone
+:ParkingZone rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
+             rdfs:comment "Agrupaciones espaciales de plazas que contienen datos tales como su geometría (polígono), referencias a sus plazas y atributos relacionados con su ubicación dentro del aparcamiento, capacidad y ocupación."@es ,
+                          "Spatial groupings of parking spots that contain data such as their geometry (polygon), references to the individual spots, and attributes related to their location within the parking facility, as well as their capacity and occupancy."@en ;
+             rdfs:label "Parking zone"@en ,
+                        "Zona de estacionamiento"@es .
+
+
 ###  https://edint.es/def/infraestructura#Facility
 <https://edint.es/def/infraestructura#Facility> rdf:type owl:Class ;
                                                 rdfs:comment "Equipamientos a los que un ciudadano puede acudir pertenecientes a una organización pública o privadal. Un equipamiento puede ser un aparcamiento, un centro educativo, una estación de bicicleta compartida y cualquier instalación que sea un centro de salud, centro educativo, centro social, comisaría, entre otros."@es ,
@@ -474,15 +613,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                                    "Punto de observación"@es .
 
 
-###  https://edint.es/def/zona-regulatoria#RegulatedParkingZone
-<https://edint.es/def/zona-regulatoria#RegulatedParkingZone> rdf:type owl:Class ;
-                                                             rdfs:subClassOf <https://edint.es/def/zona-regulatoria#RegulatedZone> ;
-                                                             rdfs:comment "Public road zone where parking is subject to time regulation, fee payment, or other restrictions."@en ,
-                                                                          "Zona de la vía pública donde el estacionamiento está sujeto a regulación horaria, pago de tasas u otras restricciones."@es ;
-                                                             rdfs:label "Regulated parking zone"@en ,
-                                                                        "Zona de estacionamiento regulado"@es .
-
-
 ###  https://edint.es/def/zona-regulatoria#RegulatedZone
 <https://edint.es/def/zona-regulatoria#RegulatedZone> rdf:type owl:Class ;
                                                       rdfs:comment "Area a la que se aplica una regulacion o normativa particular."@es ,
@@ -495,12 +625,22 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #    Individuals
 #################################################################
 
+###  https://edint.es/def/zona-regulatoria#RegulatedZoneType
+<https://edint.es/def/zona-regulatoria#RegulatedZoneType> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
 ###  https://edint.es/kos/VehiclePermitType
-<https://edint.es/kos/VehiclePermitType> rdf:type owl:NamedIndividual .
+<https://edint.es/kos/VehiclePermitType> rdf:type owl:NamedIndividual ,
+                                                  <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 ###  https://edint.es/kos/VehicleType
 <https://edint.es/kos/VehicleType> rdf:type owl:NamedIndividual .
+
+
+###  https://edint.es/kos/RegulatedZoneType/RegulatedParkingZone
+<https://edint.es/kos/RegulatedZoneType/RegulatedParkingZone> rdf:type owl:NamedIndividual .
 
 
 #################################################################
