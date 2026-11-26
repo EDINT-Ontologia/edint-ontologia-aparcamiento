@@ -17,8 +17,8 @@
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix edintkos: <https://edint.es/kos/> .
-@base   <http://example.org/resource/> .
-@prefix ex: <http://example.org/resource/> .
+@base   <https://example.org/resource/> .
+@prefix ex: <https://example.org/resource/> .
 
 <geometry/parking-mad-101>
   a geosparql:Geometry;
