@@ -1,4 +1,4 @@
-<h2 id="overv" class="list">Parking: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="overv" class="list">EDINT Parking Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
@@ -10,6 +10,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#http://www.opengis.net/ont/geosparql#Feature" title="http://www.opengis.net/ont/geosparql#Feature">Feature</a>
+   </li>
+   <li>
+      <a href="#http://www.opengis.net/ont/geosparql#Geometry" title="http://www.opengis.net/ont/geosparql#Geometry">Geometry</a>
    </li>
    <li>
       <a href="#ParkingSpotsByPermitType"
@@ -41,12 +44,15 @@ This ontology has the following classes and properties.</span>
       <a href="#ParkingSpot" title="https://edint.es/def/aparcamiento#ParkingSpot">Parking spot</a>
    </li>
    <li>
-      <a href="#https://edint.es/def/zona-regulatoria#RegulatedParkingZone"
-         title="https://edint.es/def/zona-regulatoria#RegulatedParkingZone">Regulated parking zone</a>
+      <a href="#ParkingZone" title="https://edint.es/def/aparcamiento#ParkingZone">Parking zone</a>
    </li>
    <li>
       <a href="#https://edint.es/def/zona-regulatoria#RegulatedZone"
          title="https://edint.es/def/zona-regulatoria#RegulatedZone">Regulated zone</a>
+   </li>
+   <li>
+      <a href="#http://www.opengis.net/ont/geosparql#SpatialObject"
+         title="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a>
    </li>
 </ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -60,6 +66,9 @@ This ontology has the following classes and properties.</span>
          title="https://edint.es/def/aparcamiento#hasSpotsByVehicleType">has a group of spots per type of vehicle</a>
    </li>
    <li>
+      <a href="#http://www.opengis.net/ont/geosparql#hasGeometry" title="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</a>
+   </li>
+   <li>
       <a href="#https://edint.es/def/infraestructura#hasObservationPoint"
          title="https://edint.es/def/infraestructura#hasObservationPoint">has observation point</a>
    </li>
@@ -70,10 +79,25 @@ This ontology has the following classes and properties.</span>
       <a href="#hasParkingSpot" title="https://edint.es/def/aparcamiento#hasParkingSpot">has parking spot</a>
    </li>
    <li>
+      <a href="#hasParkingZone" title="https://edint.es/def/aparcamiento#hasParkingZone">has parking zone</a>
+   </li>
+   <li>
+      <a href="#https://edint.es/def/zona-regulatoria/hasRegulatedZoneType"
+         title="https://edint.es/def/zona-regulatoria/hasRegulatedZoneType">has regulated zone type</a>
+   </li>
+   <li>
       <a href="#hasSensor" title="https://edint.es/def/aparcamiento#hasSensor">has sensor</a>
    </li>
    <li>
       <a href="#isPartOfZone" title="https://edint.es/def/aparcamiento#isPartOfZone">is part of zone</a>
+   </li>
+   <li>
+      <a href="#locatedInParkingZone"
+         title="https://edint.es/def/aparcamiento#locatedInParkingZone">located in parking zone</a>
+   </li>
+   <li>
+      <a href="#parkingAssociatedWith"
+         title="https://edint.es/def/aparcamiento#parkingAssociatedWith">parking associated with</a>
    </li>
    <li>
       <a href="#https://edint.es/def/censo-vehiculos#permitType" title="https://edint.es/def/censo-vehiculos#permitType">permit type</a>
@@ -89,7 +113,32 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
+      <a href="#asWKT" title="https://edint.es/def/aparcamiento#asWKT">as WKT</a>
+   </li>
+   <li>
+      <a href="#locationInParking"
+         title="https://edint.es/def/aparcamiento#locationInParking">Location of the parking zone within the parking facility, for example "Level 1".</a>
+   </li>
+   <li>
+      <a href="#numberOfOccupiedSpots"
+         title="https://edint.es/def/aparcamiento#numberOfOccupiedSpots">number of occupied spots</a>
+   </li>
+   <li>
       <a href="#numberOfParkingSpots"
          title="https://edint.es/def/aparcamiento#numberOfParkingSpots">number of parking spots</a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#https://edint.es/def/zona-regulatoria#RegulatedZoneType"
+         title="https://edint.es/def/zona-regulatoria#RegulatedZoneType">
+         <span>Regulated Zone Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://edint.es/kos/VehiclePermitType" title="https://edint.es/kos/VehiclePermitType">
+         <span>Vehicle Permit Type</span>
+      </a>
    </li>
 </ul>
